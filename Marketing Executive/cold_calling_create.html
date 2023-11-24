@@ -6,12 +6,14 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Clivax - Admin & Dashboard Template</title>
+    <title>Dashboard | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Codebucks" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
 
     
     <!-- dark layout js -->
@@ -19,6 +21,7 @@
 
     <!-- Bootstrap Css -->
     <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    
     <!-- Icons Css -->
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- simplebar css -->
@@ -43,19 +46,19 @@
             <div class="navbar-logo-box">
                 <a href="index.html" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="../assets/images/logo-sm.png" alt="logo-sm-dark" height="20">
+                        <img src="../../assets/images/logo-sm.png" alt="logo-sm-dark" height="20">
                     </span>
                     <span class="logo-lg">
-                        <img src="../assets/images/logo-dark.png" alt="logo-dark" height="18">
+                        <img src="../../assets/images/logo-dark.png" alt="logo-dark" height="18">
                     </span>
                 </a>
 
                 <a href="index.html" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="../assets/images/logo-sm.png" alt="logo-sm-light" height="20">
+                        <img src="../../assets/images/logo-sm.png" alt="logo-sm-light" height="20">
                     </span>
                     <span class="logo-lg">
-                        <img src="../assets/images/logo-light.png" alt="logo-light" height="18">
+                        <img src="../../assets/images/logo-light.png" alt="logo-light" height="18">
                     </span>
                 </a>
 
@@ -127,7 +130,7 @@
                         <div class="dropdown-menu dropdown-menu-start dropdown-menu-lg-widest dropdown-menu-widest dropdown-menu-animated bg-primary-subtle overflow-hidden">
                             <div class="dropdown-row justify-content-center">
                                 <div class="p-2 menu-image">
-                                    <img src="../assets/images/mega-menu.png" alt="mega-menu image" class="img-fluid" style="height: 200px;">
+                                    <img src="../../assets/images/mega-menu.png" alt="mega-menu image" class="img-fluid" style="height: 200px;">
                                 </div>
                                 <div class="dropdown-col">
                                     <h2 class="">Welcome back!</h2>
@@ -332,11 +335,10 @@
                     <!-- Start Profile -->
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn btn-sm top-icon p-0" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded avatar-2xs p-0" src="../assets/images/users/avatar-6.png" alt="Header Avatar">
+                            <img class="rounded avatar-2xs p-0" src="../../assets/images/users/avatar-6.png" alt="Header Avatar">
                         </button>
                         <div class="dropdown-menu dropdown-menu-wide dropdown-menu-end dropdown-menu-animated overflow-hidden py-0">
                             <div class="card border-0">
-
                                 <div class="card-header bg-primary rounded-0">
                                     <div class="rich-list-item w-100 p-0">
                                         <div class="rich-list-prepend">
@@ -351,7 +353,6 @@
                                         <div class="rich-list-append"><span class="badge badge-label-light fs-6">6+</span></div>
                                     </div>
                                 </div>
-
                                 <div class="card-body p-0">
                                     <div class="grid-nav grid-nav-flush grid-nav-action grid-nav-no-rounded">
                                         <div class="grid-nav-row">
@@ -384,9 +385,7 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="card-footer card-footer-bordered rounded-0"><a href="auth-login.html" class="btn btn-label-danger">Sign out</a></div>
-                                
                             </div>
                         </div>
                     </div>
@@ -506,84 +505,72 @@
 
     <div class="main-content">
         <div class="page-content">
-            <div class="container-fluid">
+            <div class="container-fluid"> 
+                <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <div>
-                                <h4 class="fs-16 fw-semibold mb-1 mb-md-2">Good Morning, <span class="text-primary">Jonas!</span></h4>
-                                <p class="text-muted mb-0">Here's what's happening with your store today.</p>
-                            </div>
+                            <h4 class="mb-sm-0">Prospecting Entry</h4>
+
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Clivax</a></li>
-                                    <li class="breadcrumb-item active">Dashboard</li>
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Prospecting Entry</li>
                                 </ol>
                             </div>
+
                         </div>
                     </div>
                 </div>
-                <!--    end row -->
+                <!-- end page title -->
 
                 <div class="row">
-                    <div class="col-xxl-9">
-                       
-                        <div class="row"> 
-                            <div class="col-xl-4">
-                                <div class="card bg-success-subtle" style="background: url('../assets/images/dashboard/dashboard-shape-2.png'); background-repeat: no-repeat; background-position: bottom center; ">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="avatar avatar-sm avatar-label-success">
-                                                <i class="mdi mdi-cash-usd-outline mt-1"></i>
-                                            </div>
-                                            <div class="ms-3">
-                                                <p class="text-success mb-1">Total Balance</p>
-                                                <h4 class="mb-0">$120</h4>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-xl-12">
+                        <div class="card"> 
+                            <div class="card-body">
+                                <form class="needs-validation" novalidate>
+                                    <div class="row"> 
 
-                            <div class="col-xl-4">
-                                <div class="card bg-danger-subtle" style="background: url('../assets/images/dashboard/dashboard-shape-1.png'); background-repeat: no-repeat; background-position: bottom center; ">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="avatar avatar-sm avatar-label-danger">
-                                       
-                                                <i class="mdi mdi-buffer mt-1"></i>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="freelancer" class="form-label">Customer</label>
+                                                <select id="select2-1" name="freelancer" required>
+                                                    <option value="">Select Customer</option> 
+                                                    <option value="">Md Enamul Haque 01796351081</option> 
+                                                    <option value="">Jamil Hosain 01796351081</option> 
+                                                    <option value="">Md Mehedi Hasan 01796351081</option> 
+                                                    <option value="">Suvo Hasan 01796351081</option>  
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    This field is required.
+                                                </div>
                                             </div>
-                                            <div class="ms-3">
-                                                <p class="text-danger mb-1">Total Freelancer</p>
-                                                <h4 class="mb-0">400</h4>
+                                        </div> 
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="first_name" class="form-label">First name <span class="text-danger">*</span></label>
+                                                <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First name" value="" required>
+                                                <div class="invalid-feedback">
+                                                    This field is required.
+                                                </div>
                                             </div>
                                         </div> 
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card bg-info-subtle" style="background: url('../assets/images/dashboard/dashboard-shape-3.png'); background-repeat: no-repeat; background-position: bottom center; ">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="avatar avatar-sm avatar-label-info">
-                                                <i class="mdi mdi-webhook mt-1"></i>
-                                            </div>
-                                            <div class="ms-3">
-                                                <p class="text-info mb-1">Customer Enty</p>
-                                                <h4 class="mb-0">72</h4>
-                                            </div>
-                                        </div> 
+                                      
+                                    <div>
+                                        <button class="btn btn-primary" type="submit">Submit</button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
+                        </div> 
                     </div>
+                    <!-- end col -->
  
                 </div>
-               
-            </div>
-            <!-- end container-fluid -->
+                <!-- end row -->
+            </div> <!-- container-fluid -->
         </div>
-        <!-- End Page-content -->
 
         <footer class="footer">
             <div class="container-fluid">
@@ -757,13 +744,13 @@
                                 <span>Meeting with</span>
                                 <div class="avatar-group ms-2">
                                     <div class="avatar avatar-circle">
-                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                 </div>
                             </div>
@@ -810,13 +797,13 @@
 <script src="../assets/libs/simplebar/simplebar.min.js"></script>
 <script src="../assets/libs/node-waves/waves.min.js"></script>
 
+<script src="../assets/libs/parsleyjs/parsley.min.js"></script>
 
-<!-- apexcharts -->
-<script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+<script src="../assets/js/pages/form-validation.init.js"></script>
 
-<script src="../assets/js/pages/dashboard.init.js"></script>
+<script src="../assets/libs/select2/js/select2.min.js"></script> 
+<script src="../assets/js/pages/form-select2.init.js"></script>
 
-<!-- App js -->
 <script src="../assets/js/app.js"></script>
 </body>
 

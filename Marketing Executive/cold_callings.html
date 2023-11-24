@@ -6,19 +6,19 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Clivax - Admin & Dashboard Template</title>
+    <title>Customer List | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Codebucks" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
-
     
     <!-- dark layout js -->
     <script src="../assets/js/pages/layout.js"></script>
 
     <!-- Bootstrap Css -->
     <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
     <!-- Icons Css -->
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- simplebar css -->
@@ -336,7 +336,6 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-wide dropdown-menu-end dropdown-menu-animated overflow-hidden py-0">
                             <div class="card border-0">
-
                                 <div class="card-header bg-primary rounded-0">
                                     <div class="rich-list-item w-100 p-0">
                                         <div class="rich-list-prepend">
@@ -351,7 +350,6 @@
                                         <div class="rich-list-append"><span class="badge badge-label-light fs-6">6+</span></div>
                                     </div>
                                 </div>
-
                                 <div class="card-body p-0">
                                     <div class="grid-nav grid-nav-flush grid-nav-action grid-nav-no-rounded">
                                         <div class="grid-nav-row">
@@ -384,9 +382,7 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="card-footer card-footer-bordered rounded-0"><a href="auth-login.html" class="btn btn-label-danger">Sign out</a></div>
-                                
                             </div>
                         </div>
                     </div>
@@ -507,83 +503,176 @@
     <div class="main-content">
         <div class="page-content">
             <div class="container-fluid">
+
+                <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <div>
-                                <h4 class="fs-16 fw-semibold mb-1 mb-md-2">Good Morning, <span class="text-primary">Jonas!</span></h4>
-                                <p class="text-muted mb-0">Here's what's happening with your store today.</p>
-                            </div>
+                            <h4 class="mb-sm-0">Cold-Calling List</h4> 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Clivax</a></li>
-                                    <li class="breadcrumb-item active">Dashboard</li>
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Cold-Calling List</li>
                                 </ol>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
-                <!--    end row -->
+                <!-- end page title -->
 
                 <div class="row">
-                    <div class="col-xxl-9">
-                       
-                        <div class="row"> 
-                            <div class="col-xl-4">
-                                <div class="card bg-success-subtle" style="background: url('../assets/images/dashboard/dashboard-shape-2.png'); background-repeat: no-repeat; background-position: bottom center; ">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="avatar avatar-sm avatar-label-success">
-                                                <i class="mdi mdi-cash-usd-outline mt-1"></i>
-                                            </div>
-                                            <div class="ms-3">
-                                                <p class="text-success mb-1">Total Balance</p>
-                                                <h4 class="mb-0">$120</h4>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-12">
+                        <div class="card"> 
+                            <div class="card-body">
 
-                            <div class="col-xl-4">
-                                <div class="card bg-danger-subtle" style="background: url('../assets/images/dashboard/dashboard-shape-1.png'); background-repeat: no-repeat; background-position: bottom center; ">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="avatar avatar-sm avatar-label-danger">
-                                       
-                                                <i class="mdi mdi-buffer mt-1"></i>
-                                            </div>
-                                            <div class="ms-3">
-                                                <p class="text-danger mb-1">Total Freelancer</p>
-                                                <h4 class="mb-0">400</h4>
-                                            </div>
+                                <div class="d-flex justify-content-between"> 
+                                    <div class="">
+                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
+                                            <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-excel"></i> Excel</span>
+                                            </button>
+
+                                            <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-csv"></i> CSV</span>
+                                            </button> 
                                         </div> 
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card bg-info-subtle" style="background: url('../assets/images/dashboard/dashboard-shape-3.png'); background-repeat: no-repeat; background-position: bottom center; ">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="avatar avatar-sm avatar-label-info">
-                                                <i class="mdi mdi-webhook mt-1"></i>
-                                            </div>
-                                            <div class="ms-3">
-                                                <p class="text-info mb-1">Customer Enty</p>
-                                                <h4 class="mb-0">72</h4>
-                                            </div>
-                                        </div> 
+                                    <div class="">
+                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
+                                            <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                                                <span><i class="fas fa-filter"></i> Filter</span>
+                                            </button> 
+                                        </div>
                                     </div>
-                                </div>
+                               </div>
+
+                                <table id=" " class="table table-hover table-bordered table-striped dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>Action</th>
+                                            <th>S/N</th>
+                                            <th>Full Name</th>
+                                            <th>Profession</th>
+                                            <th>Upazilla/Thana</th>
+                                            <th>Union</th>
+                                            <th>Village</th>
+                                            <th>Last Prospecting</th>
+                                            <th>Project</th>
+                                            <th>Unit</th>
+                                            <th>Mobile No</th>
+                                            <th>Freelancer</th>
+                                            <th>Remark</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr>
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="lead_create.html">Lead</a>
+                                                    </div>
+                                                </div> 
+                                            </td> 
+                                            <td>1</td>
+                                            <td>Enamul</td>
+                                            <td>Engineer</td>
+                                            <td>Badulgachhi</td>
+                                            <td>Mothorapur</td>
+                                            <td>Chalkmothor</td>
+                                            <th>11,Dec-2023</th>
+                                            <th>Rana Plaza</th>
+                                            <th>D-3</th>
+                                            <td>01796351081</td>
+                                            <td>Md Jamil [FL154]</td>
+                                            <td>He is Good</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="lead_create.html">Lead</a>
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                            <td>1</td>
+                                            <td>Enamul</td>
+                                            <td>Engineer</td>
+                                            <td>Badulgachhi</td>
+                                            <td>Mothorapur</td>
+                                            <td>Chalkmothor</td>
+                                            <th>11,Dec-2023</th>
+                                            <th>Rana Plaza</th>
+                                            <th>D-3</th>
+                                            <td>01796351081</td>
+                                            <td>Md Jamil [FL154]</td>
+                                            <td>He is Good</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="lead_create.html">Lead</a>
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                            <td>2</td>
+                                            <td>Enamul</td>
+                                            <td>Engineer</td>
+                                            <td>Badulgachhi</td>
+                                            <td>Mothorapur</td>
+                                            <td>Chalkmothor</td>
+                                            <th>11,Dec-2023</th>
+                                            <th>Rana Plaza</th>
+                                            <th>D-3</th>
+                                            <td>01796351081</td>
+                                            <td>Md Jamil [FL154]</td>
+                                            <td>He is Good</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" class="d-block" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="lead_create.html">Lead</a>
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                            <td>3</td>
+                                            <td>Enamul</td>
+                                            <td>Engineer</td>
+                                            <td>Badulgachhi</td>
+                                            <td>Mothorapur</td>
+                                            <td>Chalkmothor</td>
+                                            <th>11,Dec-2023</th>
+                                            <th>Rana Plaza</th>
+                                            <th>D-3</th>
+                                            <td>01796351081</td>
+                                            <td>Md Jamil [FL154]</td>
+                                            <td>He is Good</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                    </div>
- 
+                        </div>
+                    </div> <!-- end col -->
                 </div>
-               
-            </div>
-            <!-- end container-fluid -->
+                <!-- end row -->
+            </div> <!-- container-fluid -->
         </div>
-        <!-- End Page-content -->
 
         <footer class="footer">
             <div class="container-fluid">
@@ -803,6 +892,58 @@
     </div> <!-- end card-->
 </div>
 
+<div class="offcanvas offcanvas-end" id="offcanvas">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Select Filter Item</h5>
+        <button class="btn btn-label-danger btn-icon" data-bs-dismiss="offcanvas">
+            <i class="fa fa-times"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="freelancer" class="form-label">Freelancer</label>
+                    <select id="select2-1" name="freelancer" required>
+                        <option value="">Select Freelancer</option> 
+                        <option value="">Enamul #FL1545 01796351081</option> 
+                        <option value="">Jamil Hosain #FL1545 01796351081</option> 
+                        <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
+                        <option value="">Suvo Hasan #FL1545 01796351081</option>  
+                    </select> 
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="customer_name" class="form-label">Customer name <span class="text-danger">*</span></label>
+                    <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Customer name" >
+                </div>
+            </div> 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="profession" class="form-label">Profession <span class="text-danger">*</span></label>
+                    <select class="form-select" name="profession" id="profession">
+                        <option value="">Select Profession</option>
+                        <option value="">Doctors</option>
+                        <option value="">Lawyers</option> 
+                        <option value="">Banker</option>
+                        <option value="">Teacher</option>
+                        <option value="">Engineer</option>
+                    </select>  
+                </div>
+            </div> 
+
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit" data-bs-dismiss="offcanvas">Filter</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <!-- JAVASCRIPT -->
 <script src="../assets/libs/jquery/jquery.min.js"></script>
 <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -810,14 +951,12 @@
 <script src="../assets/libs/simplebar/simplebar.min.js"></script>
 <script src="../assets/libs/node-waves/waves.min.js"></script>
 
+<script src="../assets/libs/select2/js/select2.min.js"></script> 
+<script src="../assets/js/pages/form-select2.init.js"></script>
 
-<!-- apexcharts -->
-<script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
-
-<script src="../assets/js/pages/dashboard.init.js"></script>
-
-<!-- App js -->
+  
 <script src="../assets/js/app.js"></script>
+
 </body>
 
 
