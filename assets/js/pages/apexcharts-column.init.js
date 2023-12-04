@@ -1,4 +1,3 @@
-
 function getChartColorsArray(t) {
     if (null !== document.getElementById(t)) {
         var e = document.getElementById(t).getAttribute("data-colors");
@@ -14,16 +13,22 @@ function getChartColorsArray(t) {
             });
     }
 }
- 
+
 var chartColumnColors = getChartColorsArray("column_chart");
-chartColumnColors &&
-    ((options = {
+
+if (chartColumnColors) {
+    var chartData = document.getElementById("column_chart").getAttribute("data-series");
+    var xaxisCategories = document.getElementById("column_chart").getAttribute("data-xaxis-categories");
+
+    chartData = chartData ? JSON.parse(chartData) : [];
+    xaxisCategories = xaxisCategories ? JSON.parse(xaxisCategories) : [];
+
+    var options = {
         chart: {
             height: 350,
             type: "bar",
             toolbar: { show: !1 },
         },
-
         plotOptions: {
             bar: {
                 horizontal: !1,
@@ -33,21 +38,20 @@ chartColumnColors &&
         },
         dataLabels: { enabled: !1 },
         stroke: { show: !0, width: 2, colors: ["transparent"] },
-        series: [
-            { name: "Target", data: [50, 60, 70, 80, 90] }, 
-            { name: "Achievement", data: [46, 57, 59, 54, 62] },
-        ],
+        series: chartData,
         colors: chartColumnColors,
-        xaxis: { categories: ["Customer Entry", "Freelancer Entry", "Prospecting", "Cold Calling", "Lead"] },
-        // yaxis: { title: { text: "$ (thousands)" } },
+        xaxis: { categories: xaxisCategories },
         grid: { borderColor: "#f1f1f1" },
         fill: { opacity: 1 },
         tooltip: {
             y: {
                 formatter: function (t) {
-                    return  t;
+                    return t;
                 },
             },
         },
-    }),
-    (chart = new ApexCharts(document.querySelector("#column_chart"), options)).render());
+    };
+
+    var chart = new ApexCharts(document.querySelector("#column_chart"), options);
+    chart.render();
+}
