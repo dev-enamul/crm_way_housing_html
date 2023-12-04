@@ -1307,7 +1307,13 @@
                 <h5 class="modal-title">Achivement <span class="text-info">[1 May-2023 - 30 May, 2023]</span></h5><button type="button" class="btn btn-sm btn-label-danger btn-icon" data-bs-dismiss="modal"><i class="mdi mdi-close"></i></button>
             </div>
             <div class="modal-body">
-                <div id="column_chart" data-colors='["--bs-primary", "--bs-success"]'  class="apex-charts" ></div>
+                <div id="abc"
+                    data-colors='["--bs-primary", "--bs-success"]'
+                    class="apex-charts"
+                    data-series='[{"name": "Target", "data": [90, 60, 70, 80, 90]},{"name": "Achivement", "data": [80, 60, 50, 40, 10]}]'
+                    data-xaxis-categories='["Freelancer Join", "Customer Join", "Prospecting", "Cold Calling", "Lead"]'
+                    data-height="400">
+                </div>
             </div>
             <!-- <div class="modal-footer"><button class="btn btn-primary">Submit</button> <button class="btn btn-outline-danger">Reset</button></div> -->
         </div>
@@ -1330,6 +1336,10 @@
 <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>  
 <!-- apexcharts init -->
 <script src="../assets/js/pages/apexcharts-column.init.js"></script>
+
+<script>
+    barChart("abc"); 
+</script>
 
 <script src="../assets/libs/moment/min/moment.min.js"></script>
 <script src="../assets/libs/daterangepicker/daterangepicker.js"></script> 

@@ -7,6 +7,7 @@
     --primary-hover:rgb(147 209 41);
     --secondary: rgba(27 65 99);
     --secondary-hover:rgba(27 65 99 .8);
+  
 }
 .row_success td{
     background-color: rgba(65,195,169,.15);

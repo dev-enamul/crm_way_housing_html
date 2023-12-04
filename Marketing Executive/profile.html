@@ -441,7 +441,7 @@
                             </div>
                         </div>
                     </div>
-
+ 
                     <div class="card-body border-top">
                         <div class="d-flex justify-content-between mb-4">
                             <h4 class="card-title">About</h4>
@@ -478,7 +478,39 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>  
+                </div>
+
+                <div class="row border-top">
+                    <div class="col-md-6">
+                        <div class="card"> 
+                            <div class="card-body">
+                                <h4>Target Achive</h4>
+                                <div id="abc"
+                                    data-colors='["--bs-primary", "--bs-success"]'
+                                    class="apex-charts"
+                                    data-series='[{"name": "Target", "data": [90, 60, 70, 80, 90]}]'
+                                    data-xaxis-categories='["Last 7 Days", "This Month", "Last Month", "Last 1 Year", "Full Life"]'
+                                    data-height="300">
+                                </div>
+                            </div> 
+                        </div>
                     </div> 
+
+                    <div class="col-md-6">
+                        <div class="card"> 
+                            <div class="card-body">
+                                <h4>Task Complete</h4>
+                                <div id="aaa"
+                                    data-colors='["--bs-primary", "--bs-success"]'
+                                    class="apex-charts"
+                                    data-series='[{"name": "Target", "data": [50, 95, 70, 80, 90]}]'
+                                    data-xaxis-categories='["Last 7 Days", "This Month", "Last Month", "Last 1 Year", "Full Life"]'
+                                    data-height="300">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>  
                 </div>
                 <!-- end row -->
             </div>
@@ -548,6 +580,17 @@
 <script src="../assets/libs/metismenu/metisMenu.min.js"></script>
 <script src="../assets/libs/simplebar/simplebar.min.js"></script>
 <script src="../assets/libs/node-waves/waves.min.js"></script>
+
+<!-- apexcharts -->
+<script src="../assets/libs/apexcharts/apexcharts.min.js"></script>  
+<!-- apexcharts init -->
+<script src="../assets/js/pages/apexcharts-column.init.js"></script>
+
+<script>
+    barChart("abc");
+    barChart("aaa");
+</script>
+  
   
 <!-- App js -->
 <script src="../assets/js/app.js"></script>

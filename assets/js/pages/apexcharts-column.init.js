@@ -13,19 +13,24 @@ function getChartColorsArray(t) {
             });
     }
 }
+ 
+function barChart(id){
+    var chartColumnColors = getChartColorsArray(id);
+    getChart(chartColumnColors, id);
+}
+ 
 
-var chartColumnColors = getChartColorsArray("column_chart");
-
-if (chartColumnColors) {
-    var chartData = document.getElementById("column_chart").getAttribute("data-series");
-    var xaxisCategories = document.getElementById("column_chart").getAttribute("data-xaxis-categories");
+function getChart(chartColumnColors, chartId){
+    var chartData = document.getElementById(chartId).getAttribute("data-series");
+    var xaxisCategories = document.getElementById(chartId).getAttribute("data-xaxis-categories");
+    var height = document.getElementById(chartId).getAttribute("data-height"); 
 
     chartData = chartData ? JSON.parse(chartData) : [];
     xaxisCategories = xaxisCategories ? JSON.parse(xaxisCategories) : [];
 
     var options = {
         chart: {
-            height: 350,
+            height: height,
             type: "bar",
             toolbar: { show: !1 },
         },
@@ -52,6 +57,6 @@ if (chartColumnColors) {
         },
     };
 
-    var chart = new ApexCharts(document.querySelector("#column_chart"), options);
+    var chart = new ApexCharts(document.querySelector("#"+chartId), options);
     chart.render();
 }
