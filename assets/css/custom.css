@@ -3,7 +3,7 @@
 /* #1b4163 */
 
 *{
-    --primary: rgb(132 204 22);
+    --primary: rgb(132 204 22); 
     --primary-hover:rgb(147 209 41);
     --secondary: rgba(27 65 99);
     --secondary-hover:rgba(27 65 99 .8);
@@ -199,6 +199,11 @@ a{
     height: 2.5rem;
     width: 2.5rem;
 }
+
+.offcanvas-header{
+    padding-bottom: 0px;
+}
+ 
 
    
  

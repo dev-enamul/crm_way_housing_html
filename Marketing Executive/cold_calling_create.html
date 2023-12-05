@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Way Housing Pvt Ltd</title>
+    <title>Cold Calling | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
@@ -28,6 +28,9 @@
     <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../assets//css//custom.css">
+ 
 
 </head>
 
@@ -435,7 +438,7 @@
 
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Customer</label>
+                                                <label for="freelancer" class="form-label">Customer <span class="text-danger">*</span></label>
                                                 <select id="select2-1" name="freelancer" required>
                                                     <option value="">Select Customer</option> 
                                                     <option value="">Md Enamul Haque 01796351081</option> 
@@ -451,18 +454,50 @@
 
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label for="first_name" class="form-label">First name <span class="text-danger">*</span></label>
-                                                <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First name" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
+                                                <label for="profession" class="form-label">Priority <span class="text-danger">*</span></label>
+                                                <select class="form-select" name="profession" id="profession" required>
+                                                    <option value="">Select Priority</option>
+                                                    <option value="1">Regular</option>
+                                                    <option value="meet-up">High</option> 
+                                                    <option value="meet-up">Low</option>
+                                                </select>  
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="profession" class="form-label">Interested Project Name <span class="text-danger">*</span></label>
+                                                <select class="form-select" name="profession" id="profession" required>
+                                                    <option value="">Select Priority</option>
+                                                    <option value="1">Regular</option>
+                                                    <option value="meet-up">High</option> 
+                                                    <option value="meet-up">Low</option>
+                                                </select>  
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="profession" class="form-label">Interested Unit Name <span class="text-danger">*</span></label>
+                                                <select class="form-select" name="profession" id="profession" required>
+                                                    <option value="">Select Priority</option>
+                                                    <option value="1">Regular</option>
+                                                    <option value="meet-up">High</option> 
+                                                    <option value="meet-up">Low</option>
+                                                </select>  
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="remark" class="form-label">Remark</label>
+                                                <textarea class="form-control" id="remark" rows="3" name="remark"></textarea>
                                             </div>
                                         </div> 
                                     </div>
                                       
-                                    <div>
-                                        <button class="btn btn-primary" type="submit">Submit</button>
-                                    </div>
+                                    <div class="text-end ">
+                                        <button class="btn btn-primary"><i class="fas fa-save"></i> Submit</button> <button class="btn btn-outline-danger"><i class="mdi mdi-refresh"></i> Reset</button>
+                                    </div> 
                                 </form>
                             </div>
                         </div> 

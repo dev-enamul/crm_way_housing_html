@@ -6,12 +6,13 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Lead Entry | Way Housing Pvt Ltd</title>
+    <title>Lead Analysis Entry | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link href="../assets/libs/bootstrap-datetime-picker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
     <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
 
@@ -28,9 +29,10 @@
     <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    
+    <link href="../assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+    
 
-    <link rel="stylesheet" href="../assets//css//custom.css">
- 
 
 </head>
 
@@ -38,9 +40,8 @@
 
 <div id="layout-wrapper">
 
-    
- <!-- Start topbar -->
- <header id="page-topbar">
+     <!-- Start topbar -->
+  <header id="page-topbar">
     <div class="navbar-header">
 
         <!-- Logo -->
@@ -359,6 +360,17 @@
                         <li><a href="lead_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Leads</a></li> 
                     </ul>
                 </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-google-analytics"></i>
+                        <span>Lead Analysis</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="lead_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Lead Analyses</a></li> 
+                        <li><a href="lead_analysis_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Lead Analysis</a></li> 
+                    </ul>
+                </li>
                 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
@@ -395,16 +407,28 @@
                 </li>
 
                 <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-teach"></i>
+                        <span>Training</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="training_schedule.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Training Schedule</a></li> 
+                        <li><a href="training_attendance.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Training Attendance</a></li> 
+                    </ul>
+                </li>
+
+                  
+                <li>
                     <a href="training_schedule.html" class="">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>Training Schedule</span>
+                        <span>Meeting Schedule</span>
                     </a>
-                </li>  
+                </li> 
+               
             </ul>
         </div> 
     </div>
 </div>
-
 
     <!-- Start right Content here -->
 
@@ -415,12 +439,12 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Lead Entry</h4>
+                            <h4 class="mb-sm-0">Training Attendance</h4>
 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Lead Entry</li>
+                                    <li class="breadcrumb-item active">Training Attendance</li>
                                 </ol>
                             </div>
 
@@ -434,17 +458,31 @@
                         <div class="card"> 
                             <div class="card-body">
                                 <form class="needs-validation" novalidate>
-                                    <div class="row"> 
+                                    <div class="row">
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Customer <span class="text-danger">*</span></label>
-                                                <select id="select2-1" name="freelancer" required>
-                                                    <option value="">Select Customer</option> 
-                                                    <option value="">Md Enamul Haque 01796351081</option> 
-                                                    <option value="">Jamil Hosain 01796351081</option> 
-                                                    <option value="">Md Mehedi Hasan 01796351081</option> 
-                                                    <option value="">Suvo Hasan 01796351081</option>  
+                                                <label for="title" class="form-label">Training Title <span class="text-danger">*</span></label>
+                                                <input type="text" name="title" class="form-control" id="title" placeholder="Training Title" value=""> 
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="agenda" class="form-label">Agenda</label> 
+                                                <textarea class="form-control" id="agenda" rows="3" name="agenda" placeholder="Training Agenda"></textarea>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="freelancer" class="form-label">Trainer</label>
+                                                <select id="select2-3" multiple="" data-select2-id="select2-3" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                                    <option value="CT" data-select2-id="177">Enamul #652</option>
+                                                    <option value="DE" data-select2-id="178">Jamul #42</option>
+                                                    <option value="FL" data-select2-id="179">Mehedi #763</option>
+                                                    <option value="GA" data-select2-id="180">Karim #73</option> 
                                                 </select>
                                                 <div class="invalid-feedback">
                                                     This field is required.
@@ -454,53 +492,35 @@
 
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label for="profession" class="form-label">Purchase Capacity <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="profession" id="profession" required>
-                                                    <option value="">Select Priority</option>
-                                                    <option value="1">Regular</option>
-                                                    <option value="meet-up">High</option> 
-                                                    <option value="meet-up">Low</option>
-                                                </select>  
+                                                <label for="start_time" class="form-label">Start Time </label>
+                                                <input type="text" name="start_time" class="form-control" placeholder="Select date" id="datetimepicker-3">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label for="profession" class="form-label">Preferrer Project Name <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="profession" id="profession" required>
-                                                    <option value="">Select Priority</option>
-                                                    <option value="1">Regular</option>
-                                                    <option value="meet-up">High</option> 
-                                                    <option value="meet-up">Low</option>
-                                                </select>  
+                                                <label for="start_time" class="form-label">End Time </label>
+                                                <input type="text" name="start_time" class="form-control" placeholder="Select date" id="datetimepicker-3">
                                             </div>
                                         </div>
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="mb-3">
-                                                <label for="profession" class="form-label">Preferrer Unit Name <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="profession" id="profession" required>
-                                                    <option value="">Select Priority</option>
-                                                    <option value="1">Regular</option>
-                                                    <option value="meet-up">High</option> 
-                                                    <option value="meet-up">Low</option>
-                                                </select>  
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="remark" class="form-label">Possible Purchase Date</label>
-                                                <input type="date" class="form-control" name="" id="">
+                                                <label for="freelancer" class="form-label">Attendance</label>
+                                                <select id="select2-3" multiple="" data-select2-id="select2-3" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                                    <option value="CT" data-select2-id="177">Enamul #652</option>
+                                                    <option value="DE" data-select2-id="178">Jamul #42</option>
+                                                    <option value="FL" data-select2-id="179">Mehedi #763</option>
+                                                    <option value="GA" data-select2-id="180">Karim #73</option> 
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    This field is required.
+                                                </div>
                                             </div>
                                         </div> 
 
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="remark" class="form-label">Remark</label>
-                                                <textarea class="form-control" id="remark" rows="1" name="remark"></textarea>
-                                            </div>
-                                        </div> 
+                                        
+                                        
                                     </div>
                                       
                                     <div class="text-end ">
@@ -538,6 +558,7 @@
 <!-- end layout-wrapper -->
 
  
+
 
 <!-- Rightbar Sidebar -->
 <div class="offcanvas offcanvas-end" id="offcanvas-rightsidabar">
@@ -735,6 +756,9 @@
 
 <script src="../assets/libs/select2/js/select2.min.js"></script> 
 <script src="../assets/js/pages/form-select2.init.js"></script>
+
+<script src="../assets/libs/bootstrap-datetime-picker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="../assets/js/pages/form-datetimepicker.init.js"></script>
 
 <script src="../assets/js/app.js"></script>
 </body>

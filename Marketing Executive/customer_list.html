@@ -24,7 +24,9 @@
     <!-- simplebar css -->
     <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
-    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" /> 
+    
+    <link href="../assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
     <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -780,31 +782,95 @@
         </button>
     </div>
     <div class="offcanvas-body">
-        <div class="row">
-
-            <div class="col-md-12">
-                <div class="mb-3">
-                    <label for="freelancer" class="form-label">Freelancer</label>
-                    <select id="select2-1" name="freelancer" required>
-                        <option value="">Select Freelancer</option> 
-                        <option value="">Md Enamul Haque #FL1545 01796351081</option> 
-                        <option value="">Jamil Hosain #FL1545 01796351081</option> 
-                        <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
-                        <option value="">Suvo Hasan #FL1545 01796351081</option>  
-                    </select> 
-                </div>
-            </div>
-
+        <div class="row">  
             <div class="col-md-6">
                 <div class="mb-3">
-                    <label for="customer_name" class="form-label">Customer name <span class="text-danger">*</span></label>
-                    <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Customer name" >
+                    <label for="customer_name" class="form-label">Freelancer name </label>
+                    <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Freelancer name" >
                 </div>
             </div> 
 
             <div class="col-md-6">
                 <div class="mb-3">
-                    <label for="profession" class="form-label">Profession <span class="text-danger">*</span></label>
+                    <label for="customer_name" class="form-label">Freelancer ID </label>
+                    <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Freelancer name" >
+                </div>
+            </div> 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="profession" class="form-label">Join Date </label>
+                    <input class="form-control" name="join_date" type="text" id="daterangepicker-4" value="" />   
+                </div>
+            </div> 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="mobile_number" class="form-label">Mobile Number </label>
+                    <input type="text" name="mobile_number" class="form-control" id="mobile_number" placeholder="Mobile Number" >  
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="upazila" class="form-label">Thana/Upazila </label>
+                    <select class="form-select" name="upazila" id="upazila" required>
+                        <option value="">Select Thana/Upazila</option>
+                        <option value="">Dhaka </option>
+                        <option value="">Chittagong </option> 
+                        <option value="">Rajshahi</option> 
+                        <option value="">Khulna </option> 
+                        <option value="">Barishal </option> 
+                        <option value="">Sylhet</option> 
+                        <option value="">Rangpur</option> 
+                        <option value="">Mymensingh</option>  
+                    </select> 
+                    <div class="invalid-feedback">
+                        This field is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="union" class="form-label">Union </label>
+                    <select class="form-select" name="union" id="union" required>
+                        <option value="">Select Union</option>
+                        <option value="">Dhaka </option>
+                        <option value="">Chittagong </option> 
+                        <option value="">Rajshahi</option> 
+                        <option value="">Khulna </option> 
+                        <option value="">Barishal </option> 
+                        <option value="">Sylhet</option> 
+                        <option value="">Rangpur</option> 
+                        <option value="">Mymensingh</option>  
+                    </select> 
+                    <div class="invalid-feedback">
+                        This field is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="village" class="form-label">Village</label>
+                    <select class="form-select" name="village" id="village">
+                        <option value="">Select Village</option>
+                        <option value="">Dhaka </option>
+                        <option value="">Chittagong </option> 
+                        <option value="">Rajshahi</option> 
+                        <option value="">Khulna </option> 
+                        <option value="">Barishal </option> 
+                        <option value="">Sylhet</option> 
+                        <option value="">Rangpur</option> 
+                        <option value="">Mymensingh</option>  
+                    </select>  
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="profession" class="form-label">Profession </label>
                     <select class="form-select" name="profession" id="profession">
                         <option value="">Select Profession</option>
                         <option value="">Doctors</option>
@@ -814,11 +880,10 @@
                         <option value="">Engineer</option>
                     </select>  
                 </div>
+            </div>  
+            <div class="text-end ">
+                <button class="btn btn-primary"><i class="fas fa-filter"></i> Filter</button> <button class="btn btn-outline-danger"><i class="mdi mdi-refresh"></i> Reset</button>
             </div> 
-
-            <div class="text-center">
-                <button class="btn btn-primary" type="submit" data-bs-dismiss="offcanvas">Filter</button>
-            </div>
 
         </div>
     </div>
@@ -834,6 +899,11 @@
 
 <script src="../assets/libs/select2/js/select2.min.js"></script> 
 <script src="../assets/js/pages/form-select2.init.js"></script>
+
+<script src="../assets/libs/moment/min/moment.min.js"></script>
+<script src="../assets/libs/daterangepicker/daterangepicker.js"></script> 
+
+<script src="../assets/js/pages/form-rangepicker.init.js"></script>
 
   
 <script src="../assets/js/app.js"></script>

@@ -26,6 +26,8 @@
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+    <link href="../assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../assets/css/custom.css">
 
 
@@ -800,7 +802,7 @@
 
             <div class="col-md-6">
                 <div class="mb-3">
-                    <label for="upazila" class="form-label">Thana/Upazila <span class="text-danger">*</span></label>
+                    <label for="upazila" class="form-label">Thana/Upazila </label>
                     <select class="form-select" name="upazila" id="upazila" required>
                         <option value="">Select Thana/Upazila</option>
                         <option value="">Dhaka </option>
@@ -820,7 +822,7 @@
 
             <div class="col-md-6">
                 <div class="mb-3">
-                    <label for="union" class="form-label">Union <span class="text-danger">*</span></label>
+                    <label for="union" class="form-label">Union </label>
                     <select class="form-select" name="union" id="union" required>
                         <option value="">Select Union</option>
                         <option value="">Dhaka </option>
@@ -857,7 +859,7 @@
 
             <div class="col-md-6">
                 <div class="mb-3">
-                    <label for="profession" class="form-label">Profession <span class="text-danger">*</span></label>
+                    <label for="profession" class="form-label">Profession </label>
                     <select class="form-select" name="profession" id="profession">
                         <option value="">Select Profession</option>
                         <option value="">Doctors</option>
@@ -866,6 +868,13 @@
                         <option value="">Teacher</option>
                         <option value="">Engineer</option>
                     </select>  
+                </div>
+            </div> 
+
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="profession" class="form-label">Join Date </label>
+                    <input class="form-control" type="text" id="daterangepicker-4" />   
                 </div>
             </div> 
 
@@ -887,6 +896,12 @@
 
 <script src="../assets/libs/select2/js/select2.min.js"></script> 
 <script src="../assets/js/pages/form-select2.init.js"></script>
+
+
+<script src="../assets/libs/moment/min/moment.min.js"></script>
+<script src="../assets/libs/daterangepicker/daterangepicker.js"></script> 
+
+<script src="../assets/js/pages/form-rangepicker.init.js"></script>
 
   
 <script src="../assets/js/app.js"></script>

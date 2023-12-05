@@ -1,1 +1,65 @@
-"use strict";$(function(){var e="rtl"===$("html").attr("dir")?"left":"right";$("#daterangepicker-1").daterangepicker({opens:e,cancelButtonClasses:"btn-label-danger"}),$("#daterangepicker-2").daterangepicker({opens:e,timePicker:!0,cancelButtonClasses:"btn-label-danger"}),$("#daterangepicker-3").daterangepicker({opens:e,singleDatePicker:!0,showDropdowns:!0,timePicker:!0,cancelButtonClasses:"btn-label-danger"}),$("#daterangepicker-4").daterangepicker({opens:e,startDate:moment().subtract(29,"days"),endDate:moment(),ranges:{Today:[moment(),moment()],Yesterday:[moment().subtract(1,"days"),moment().subtract(1,"days")],"Last 7 Days":[moment().subtract(6,"days"),moment()],"Last 30 Days":[moment().subtract(29,"days"),moment()],"This Month":[moment().startOf("month"),moment().endOf("month")],"Last Month":[moment().subtract(1,"month").startOf("month"),moment().subtract(1,"month").endOf("month")]}}),$("#daterangepicker-5").daterangepicker({opens:e,minDate:"04/09/2020",maxDate:"05/15/2020",cancelButtonClasses:"btn-label-danger"}),$("#daterangepicker-6").daterangepicker({opens:e,showWeekNumbers:!0,timePicker:!0,cancelButtonClasses:"btn-label-danger",ranges:{Today:[moment(),moment()],Yesterday:[moment().subtract(1,"days"),moment().subtract(1,"days")],"Last 7 Days":[moment().subtract(6,"days"),moment()],"Last 30 Days":[moment().subtract(29,"days"),moment()],"This Month":[moment().startOf("month"),moment().endOf("month")],"Last Month":[moment().subtract(1,"month").startOf("month"),moment().subtract(1,"month").endOf("month")]}}),$("#daterangepicker-7").daterangepicker({opens:e,cancelButtonClasses:"btn-label-danger",locale:{opens:e,format:"MM/DD/YYYY",separator:" - ",applyLabel:"подать заявление",cancelLabel:"Отмена",fromLabel:"от",toLabel:"в",weekLabel:"н",daysOfWeek:["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],monthNames:["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],firstDay:1}})});
+"use strict";
+
+function getDateRange(id,CustomRangeLabel = false){ 
+
+    var defaultRange = $("#"+id).attr("default");
+ 
+    var defaultStartDate, defaultEndDate;
+
+    switch (defaultRange) {
+        case "All":
+            defaultStartDate = moment('1900-01-01');
+            defaultEndDate = moment();
+            break;
+        case "Today":
+            defaultStartDate = moment();
+            defaultEndDate = moment();
+            break;
+        case "Yesterday":
+            defaultStartDate = moment().subtract(1, "days");
+            defaultEndDate = moment().subtract(1, "days");
+            break;
+        case "Last 7 Days":
+            defaultStartDate = moment().subtract(6, "days");
+            defaultEndDate = moment();
+            break;
+        case "Last 30 Days":
+            defaultStartDate = moment().subtract(29, "days");
+            defaultEndDate = moment();
+            break;
+        case "This Month":
+            defaultStartDate = moment().startOf("month");
+            defaultEndDate = moment().endOf("month");
+            break;
+        case "Last Month":
+            defaultStartDate = moment().subtract(1, "month").startOf("month");
+            defaultEndDate = moment().subtract(1, "month").endOf("month");
+            break;
+        // Handle the case when no default range is specified or an invalid value is provided
+        default:
+            // Set a default range, or you can leave it blank
+            defaultStartDate = moment().subtract(29, "days");
+            defaultEndDate = moment();
+            break;
+    }
+
+    var direction = $("html").attr("dir") === "rtl" ? "left" : "right";  
+    $("#"+id).daterangepicker({
+        opens: direction,
+        startDate:defaultStartDate,
+        endDate: defaultEndDate,
+        showCustomRangeLabel: CustomRangeLabel,
+        ranges: {
+            "All": [moment('1900-01-01'), moment()],  
+            Today: [moment(), moment()],
+            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+            "This Month": [moment().startOf("month"), moment().endOf("month")],
+            "Last Month": [
+                moment().subtract(1, "month").startOf("month"),
+                moment().subtract(1, "month").endOf("month")
+            ], 
+        }
+    });
+}
