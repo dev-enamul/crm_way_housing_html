@@ -36,8 +36,8 @@
 <div id="layout-wrapper">
 
     
-  <!-- Start topbar -->
-  <header id="page-topbar">
+<!-- Start topbar -->
+<header id="page-topbar">
     <div class="navbar-header">
 
         <!-- Logo -->
@@ -87,11 +87,12 @@
             <div class="d-flex align-items-center gap-2"> 
                 <!-- Start Notification --> 
 
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary btn-sm fs-14 d-inline p-2 px-3">
-                        Tap for Balance
-                    </button>  
-                </div>
+                <form class="app-search d-none d-lg-block">
+                    <div class="position-relative">
+                        <input type="text" class="form-control select2" placeholder="Search nid/phone...">
+                        <span class="fab fa-sistrix fs-17 align-middle"></span>
+                    </div>
+                </form>
 
                 <div class="dropdown d-inline-block">
                     <button type="button" class="btn btn-sm top-icon" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -356,6 +357,17 @@
                         <li><a href="lead_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Leads</a></li> 
                     </ul>
                 </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-google-analytics"></i>
+                        <span>Lead Analysis</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="lead_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Lead Analyses</a></li> 
+                        <li><a href="lead_analysis_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Lead Analysis</a></li> 
+                    </ul>
+                </li>
                 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
@@ -392,15 +404,30 @@
                 </li>
 
                 <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-teach"></i>
+                        <span>Training</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="training_schedule.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Training Schedule</a></li> 
+                        <li><a href="training_attendance.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Training Attendance</a></li> 
+                        <li><a href="training_history.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Training History</a></li> 
+                    </ul>
+                </li>
+
+                  
+                <li>
                     <a href="training_schedule.html" class="">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>Training Schedule</span>
+                        <span>Meeting Schedule</span>
                     </a>
-                </li>  
+                </li> 
+               
             </ul>
         </div> 
     </div>
 </div>
+<!-- ========== End Sidebar Start ========== --> 
 
 
     <!-- Start right Content here -->

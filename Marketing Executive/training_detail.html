@@ -6,29 +6,34 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Freelancers | Way Housing Pvt Ltd</title>
+    <title>Training History | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link href="../assets/libs/bootstrap-datetime-picker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+
     
     <!-- dark layout js -->
     <script src="../assets/js/pages/layout.js"></script>
 
     <!-- Bootstrap Css -->
     <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+
+    <link href="../assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
+    
     <!-- Icons Css -->
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- simplebar css -->
     <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-
-    <link href="../assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="../assets/css/custom.css">
+    
+    <link href="../assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+    
 
 
 </head>
@@ -36,7 +41,7 @@
 <body>
 
 <div id="layout-wrapper">
- 
+
 <!-- Start topbar -->
 <header id="page-topbar">
     <div class="navbar-header">
@@ -430,173 +435,246 @@
 </div>
 <!-- ========== End Sidebar Start ========== --> 
 
-
-    <!-- Start right Content here -->
-
+    <!-- Start right Content here --> 
     <div class="main-content">
         <div class="page-content">
-            <div class="container-fluid">
-
-                <!-- start page title -->
+            <div class="container-fluid"> 
                 <div class="row">
                     <div class="col-12">
-                        <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Freelancer List</h4>
-
-                            <div class="page-title-right">
-                                <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Freelancer List</li>
-                                </ol>
-                            </div>
-
+                        <div class="page-title-box text-center">
+                            <h4 class="mb-sm-0 pb-1">Effective Communication with Homebuyers </h4> 
+                            <p class="m-0">20 December, 2023 <span class="badge badge-label-primary"> 4:20PM - 6:20 PM </span></p>
                         </div>
                     </div>
                 </div>
-                <!-- end page title -->
-
-             
 
                 <div class="row">
-                    <div class="col-12">
-                        <div class="card"> 
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header card-header-bordered bg-primary">
+                                <div class="card-icon text-white"><i class="fa fa-user-tag fs14"></i></div>
+                                <h3 class="card-title text-white">Trainer</h3>
+                            </div>
                             <div class="card-body">
-                               <div class="d-flex justify-content-between"> 
-                                    <div class="">
-                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
-                                            <button class="btn btn-primary buttons-copy buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
-                                                <span><i class="fas fa-file-excel"></i> Excel</span>
-                                            </button>
-
-                                            <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
-                                                <span><i class="fas fa-file-csv"></i> CSV</span>
-                                            </button> 
-                                        </div> 
-                                    </div>
-                                    <div class="">
-                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
-                                            <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
-                                                <span><i class="fas fa-filter"></i> Filter</span>
-                                            </button> 
+                                <div class="rich-list rich-list-flush">
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Airi Satou</h4>
+                                                <p class="rich-list-subtitle mb-0">Accountant</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
                                         </div>
                                     </div>
-                               </div>
-                               
-                                <table id=" " class="table table-hover table-bordered table-striped dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <thead>
-                                        <tr class="">
-                                            <th>Action</th>
-                                            <th>S/N</th>
-                                            <th>Date</th>
-                                            <th>Full Name</th>
-                                            <th>Profession</th>
-                                            <th>Upazilla/Thana</th>
-                                            <th>Union</th>
-                                            <th>Village</th>
-                                            <th>Mobile No</th>
-                                            <th>F/L ID</th> 
-                                        </tr>
-                                    </thead>
-                                    <tbody> 
-                                        <tr class="">
-                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-animated">
-                                                        <a class="dropdown-item" href="freelancer_profile.html">View Profile</a>
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                        <a class="dropdown-item" href="prospecting.html">Prospecting</a>
-                                                    </div>
-                                                </div> 
-                                            </td> 
-                                            <td>1</td>
-                                            <td>3 Dec, 2023</td>
-                                            <td>Md Enamul Haque</td>
-                                            <td>Engineer</td>
-                                            <td>Badulgachhi</td>
-                                            <td>Mothorapur</td>
-                                            <td>Chalkmothor</td>
-                                            <td>01796351081</td>
-                                            <td>FL-154</td> 
-                                        </tr>
 
-                                        <tr class="">
-                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-animated">
-                                                        <a class="dropdown-item" href="freelancer_profile.html">View Profile</a>
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                        <a class="dropdown-item" href="prospectings_create.html">Prospecting</a>
-                                                    </div>
-                                                </div> 
-                                            </td>
-                                            <td>2</td>
-                                            <td>12 Nov, 2023</td>
-                                            <td>Md Enamul Haque</td>
-                                            <td>Engineer</td>
-                                            <td>Badulgachhi</td>
-                                            <td>Mothorapur</td>
-                                            <td>Chalkmothor</td>
-                                            <td>01796351081</td>
-                                            <td>FL-154</td> 
-                                        </tr>
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Cedric Kelly</h4>
+                                                <p class="rich-list-subtitle mb-0">Senior Developer</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+                                     
+                                </div>
+                            </div>
 
-                                        <tr class="">
-                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-animated">
-                                                        <a class="dropdown-item" href="freelancer_profile.html">View Profile</a>
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                        <a class="dropdown-item" href="prospectings_create.html">Prospecting</a>
-                                                    </div>
-                                                </div> 
-                                            </td>
-                                            <td>3</td>
-                                            <td>7 Sep, 2023</td>
-                                            <td>Md Enamul Haque</td>
-                                            <td>Engineer</td>
-                                            <td>Badulgachhi</td>
-                                            <td>Mothorapur</td>
-                                            <td>Chalkmothor</td>
-                                            <td>01796351081</td>
-                                            <td>FL-154</td> 
-                                        </tr>
+                            <div class="card-header card-header-bordered bg-primary">
+                                <div class="card-icon text-white"><i class="fa fa-user-tag fs14"></i></div>
+                                <h3 class="card-title text-white">Attendance</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="rich-list rich-list-flush">
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Airi Satou</h4>
+                                                <p class="rich-list-subtitle mb-0">Accountant</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Cedric Kelly</h4>
+                                                <p class="rich-list-subtitle mb-0">Senior Developer</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Brielle Williamson</h4>
+                                                <p class="rich-list-subtitle mb-0">Integration Specialist</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
 
-                                        <tr>
-                                            <td class="text-center"> 
-                                                <div class="dropdown">
-                                                    <a href="javascript:void(0)" class="d-block" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-animated">
-                                                        <a class="dropdown-item" href="freelancer_profile.html">View Profile</a>
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Delete</a>
-                                                        <a class="dropdown-item" href="prospectings_create.html">Prospecting</a>
-                                                    </div>
-                                                </div> 
-                                            </td>
-                                            <td>4</td>
-                                            <td>9 Aug, 2023</td>
-                                            <td>Md Enamul Haque</td>
-                                            <td>Engineer</td>
-                                            <td>Badulgachhi</td>
-                                            <td>Mothorapur</td>
-                                            <td>Chalkmothor</td>
-                                            <td>01796351081</td>
-                                            <td>FL-154</td> 
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Brielle Williamson</h4>
+                                                <p class="rich-list-subtitle mb-0">Integration Specialist</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-6.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Sonya Frost</h4>
+                                                <p class="rich-list-subtitle mb-0">Software Engineer</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div> <!-- end col -->
-                </div>
-                <!-- end row -->
-            </div> <!-- container-fluid -->
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-primary">
+                                <div class="card-icon text-white"><i class="mdi mdi-view-agenda fs14"></i></div>
+                                <h3 class="card-title text-white"> Agenda</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5>Welcome and Introduction (15 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-primary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Greet participants and set a positive tone for the session.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Introduce the importance of effective communication in the housing industry.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+        
+                                <h5>Icebreaker Activity: "Two Truths and a Lie" (20 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-primary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Encourage team members to share interesting facts about themselves.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Foster a relaxed atmosphere for open communication.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+        
+                                <h5>Understanding Communication Styles (30 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-primary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Presentation on different communication styles.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Group discussion on recognizing and adapting to various communication preferences</p>
+                                        </div>
+                                    </div> 
+                                </div>
+        
+                                <h5>Active Listening Techniques (20 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-primary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Importance of active listening in effective communication.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Interactive exercises to practice active listening skills.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                                <h5>Break (10 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Break (10 minutes)</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div>  
         </div>
 
         <footer class="footer">
@@ -620,6 +698,7 @@
 <!-- end layout-wrapper -->
 
  
+
 
 <!-- Rightbar Sidebar -->
 <div class="offcanvas offcanvas-end" id="offcanvas-rightsidabar">
@@ -758,13 +837,13 @@
                                 <span>Meeting with</span>
                                 <div class="avatar-group ms-2">
                                     <div class="avatar avatar-circle">
-                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                 </div>
                             </div>
@@ -802,117 +881,7 @@
             </div>
         </div>
     </div> <!-- end card-->
-</div> 
-
-<div class="offcanvas offcanvas-end" id="offcanvas">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title">Select Filter Item</h5>
-        <button class="btn btn-label-danger btn-icon" data-bs-dismiss="offcanvas">
-            <i class="fa fa-times"></i>
-        </button>
-    </div>
-    <div class="offcanvas-body">
-        <div class="row">  
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="customer_name" class="form-label">Freelancer name </label>
-                    <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Freelancer name" >
-                </div>
-            </div> 
-
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="customer_name" class="form-label">Freelancer ID </label>
-                    <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Freelancer name" >
-                </div>
-            </div> 
-
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="upazila" class="form-label">Thana/Upazila </label>
-                    <select class="form-select" name="upazila" id="upazila" required>
-                        <option value="">Select Thana/Upazila</option>
-                        <option value="">Dhaka </option>
-                        <option value="">Chittagong </option> 
-                        <option value="">Rajshahi</option> 
-                        <option value="">Khulna </option> 
-                        <option value="">Barishal </option> 
-                        <option value="">Sylhet</option> 
-                        <option value="">Rangpur</option> 
-                        <option value="">Mymensingh</option>  
-                    </select> 
-                    <div class="invalid-feedback">
-                        This field is required.
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="union" class="form-label">Union </label>
-                    <select class="form-select" name="union" id="union" required>
-                        <option value="">Select Union</option>
-                        <option value="">Dhaka </option>
-                        <option value="">Chittagong </option> 
-                        <option value="">Rajshahi</option> 
-                        <option value="">Khulna </option> 
-                        <option value="">Barishal </option> 
-                        <option value="">Sylhet</option> 
-                        <option value="">Rangpur</option> 
-                        <option value="">Mymensingh</option>  
-                    </select> 
-                    <div class="invalid-feedback">
-                        This field is required.
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="village" class="form-label">Village</label>
-                    <select class="form-select" name="village" id="village">
-                        <option value="">Select Village</option>
-                        <option value="">Dhaka </option>
-                        <option value="">Chittagong </option> 
-                        <option value="">Rajshahi</option> 
-                        <option value="">Khulna </option> 
-                        <option value="">Barishal </option> 
-                        <option value="">Sylhet</option> 
-                        <option value="">Rangpur</option> 
-                        <option value="">Mymensingh</option>  
-                    </select>  
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="profession" class="form-label">Profession </label>
-                    <select class="form-select" name="profession" id="profession">
-                        <option value="">Select Profession</option>
-                        <option value="">Doctors</option>
-                        <option value="">Lawyers</option> 
-                        <option value="">Banker</option>
-                        <option value="">Teacher</option>
-                        <option value="">Engineer</option>
-                    </select>  
-                </div>
-            </div> 
-
-            <div class="col-md-12">
-                <div class="mb-3">
-                    <label for="profession" class="form-label">Join Date </label>
-                    <input class="form-control" type="text" id="daterangepicker-4" />   
-                </div>
-            </div> 
-
-            <div class="text-end ">
-                <button class="btn btn-primary"><i class="fas fa-filter"></i> Filter</button> <button class="btn btn-outline-danger"><i class="mdi mdi-refresh"></i> Reset</button>
-            </div> 
-
-        </div>
-    </div>
 </div>
-
 
 <!-- JAVASCRIPT -->
 <script src="../assets/libs/jquery/jquery.min.js"></script>
@@ -921,18 +890,18 @@
 <script src="../assets/libs/simplebar/simplebar.min.js"></script>
 <script src="../assets/libs/node-waves/waves.min.js"></script>
 
-<script src="../assets/libs/select2/js/select2.min.js"></script> 
-<script src="../assets/js/pages/form-select2.init.js"></script>
-
+<script src="../assets/libs/parsleyjs/parsley.min.js"></script>
 
 <script src="../assets/libs/moment/min/moment.min.js"></script>
-<script src="../assets/libs/daterangepicker/daterangepicker.js"></script> 
-
+<script src="../assets/libs/daterangepicker/daterangepicker.js"></script>  
 <script src="../assets/js/pages/form-rangepicker.init.js"></script>
 
-  
-<script src="../assets/js/app.js"></script>
+<script>
+    getDateRange('filter_input',true);
+</script>
 
+<script src="../assets/js/app.js"></script>
+ 
 </body>
 
 

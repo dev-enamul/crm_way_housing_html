@@ -6,9 +6,15 @@
     --primary: rgb(132 204 22); 
     --primary-hover:rgb(147 209 41);
     --secondary: rgba(27 65 99);
-    --secondary-hover:rgba(27 65 99 .8);
+    --secondary-hover:rgba(27 65 99 .8); 
   
 }
+
+:root {
+    --bs-primary: rgb(132, 204, 22);
+    --bs-success: rgba(27, 65, 99, 1);
+  }
+  
 .row_success td{
     background-color: rgba(65,195,169,.15);
     border-color: transparent; 
@@ -203,7 +209,30 @@ a{
 .offcanvas-header{
     padding-bottom: 0px;
 }
- 
+.datetimepicker{
+    width: 100% !important;
+}
+
+.oneline td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.avatar-circle-sm{
+    width: 2rem !important;
+    height: 2rem !important;
+}
+.avatar-circle-sm img{
+    height: 19px !important;
+    width: 19px !important; 
+}
+
+.form-check-input:checked{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+  
 
    
  

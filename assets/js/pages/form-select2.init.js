@@ -1,1 +1,30 @@
-"use strict";$(function(){var e="rtl"===$("html").attr("dir")?"rtl":"ltr";$("#select2-1, #select2-2").select2({dir:e,dropdownAutoWidth:!0}),$("#select2-3").select2({dir:e,dropdownAutoWidth:!0,placeholder:"Select multiple",allowClear:!0}),$("#select2-4").select2({dir:e,dropdownAutoWidth:!0,minimumResultsForSearch:1/0}),$("#select2-5").select2({dir:e,dropdownAutoWidth:!0,placeholder:"Select a state",allowClear:!0}),$("#select2-6").select2({dir:e,dropdownAutoWidth:!0,placeholder:"Disabled element",allowClear:!0}),$("#select2-7").select2({dir:e,dropdownAutoWidth:!0,placeholder:"Disabled options",allowClear:!0}),$("#select2-8").select2({dir:e,dropdownAutoWidth:!0,placeholder:"Select two or less items",allowClear:!0,maximumSelectionLength:2}),$("#select2-9").select2({dir:e,dropdownAutoWidth:!0,placeholder:"Add a tag",tags:!0})});
+"use strict";
+  
+$(function () {
+    var direction = $("html").attr("dir") === "rtl" ? "rtl" : "ltr"; 
+    
+    $(".select2").each(function () {  
+        var placeholder = $(this).attr("placeholder") || "";
+        var allowClear = $(this).is("[allowClear]");
+        var tags = $(this).is("[tags]");
+        var multiple = $(this).is("[multiple]");
+        var search = $(this).is("[search]");
+        var maximumSelectionLength = $(this).is("[max]") || Infinity;
+        if(tags== true){
+            multiple = true;
+        } 
+         
+        $(this).select2({
+            dir: direction,
+            dropdownAutoWidth: true,
+            placeholder: placeholder,
+            allowClear: allowClear,
+            minimumResultsForSearch: search,
+            maximumSelectionLength: maximumSelectionLength,
+            multiple: multiple,  
+            tags: tags
+        });
+    });
+
+  
+});

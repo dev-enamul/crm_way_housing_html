@@ -6,29 +6,35 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Customer List | Way Housing Pvt Ltd</title>
+    <title>Training History | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link href="../assets/libs/bootstrap-datetime-picker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+
     
     <!-- dark layout js -->
     <script src="../assets/js/pages/layout.js"></script>
 
     <!-- Bootstrap Css -->
     <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+
+    <link href="../assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
+    
     <!-- Icons Css -->
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- simplebar css -->
     <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    
+    <link href="../assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+    
 
-    <link href="../assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="../assets/css/custom.css">
 
 </head>
 
@@ -36,7 +42,6 @@
 
 <div id="layout-wrapper">
 
-    
 <!-- Start topbar -->
 <header id="page-topbar">
     <div class="navbar-header">
@@ -430,7 +435,6 @@
 </div>
 <!-- ========== End Sidebar Start ========== --> 
 
-
     <!-- Start right Content here -->
 
     <div class="main-content">
@@ -441,18 +445,20 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Task Complete History </h4>
+                        <h4 class="mb-sm-0">Training History</h4>
 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Task History</li>
+                                    <li class="breadcrumb-item active">Target Achivement    </li>
                                 </ol>
                             </div>
 
                         </div>
                     </div>
-                </div> 
+                </div>
+                <!-- end page title -->
+ 
                 <div class="row"> 
                     <div class="col-12"> 
                         <div class="card"> 
@@ -465,13 +471,14 @@
                                             </button>
 
                                             <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
-                                                <span><i class="fas fa-file-csv"></i> CSV</span>
+                                                <span><i class="fas fa-file-pdf"></i> PDF</span>
                                             </button> 
                                         </div>  
                                     </div>
+
                                     <div class="">  
                                         <div class="input-group">  
-                                            <input class="form-control" type="text" id="daterangepicker-6" value="12/01/2023 - 12/31/2023" />   
+                                            <input class="form-control" id="filter_input" type="text" />   
                                             <button class="btn btn-secondary" type="submit">
                                                 <span><i class="fas fa-filter"></i> Filter</span>
                                             </button> 
@@ -479,159 +486,428 @@
                                     </div>
                                </div>
  
-                                <table id=" " class="table table-hover table-bordered table-striped dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                <table class="table table-hover table-bordered table-striped dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                     <thead>
                                         <tr> 
-                                            <th>Action</th> 
-                                            <th>S/N</th> 
-                                            <th>Date</th> 
-                                            <th>Asign Task</th>
-                                            <th>Complete Task</th>
-                                            <th>Progress</th>  
-                                            <th>Remark</th>
+                                            <th class="text-center">Action</th> 
+                                            <th class="text-center">S/L</th>
+                                            <th class="text-center">Date Time</th>
+                                            <th>Title</th>  
+                                            <th>Trainer</th> 
+                                            <th>Attendance</th>  
                                         </tr>
                                     </thead>
                                     <tbody> 
                                         <tr> 
-                                            <td class="text-center"><button data-bs-toggle="modal" data-bs-target="#view_detail" class="btn btn-sm btn-primary"><i class="mdi mdi-eye"></i> View</button></td>
-                                            <td>1</td>
-                                            <td>30 September,2023</td>
-                                            <td>10</td>
-                                            <td>5</td>
+                                            <td class="text-center align-middle"><a href="training_detail.html" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a></td>
+                                            <td class="text-center align-middle">1</td> 
+                                            <td class="text-center align-middle">06 Dec, 2023 <br> <span class="badge badge-label-primary">4:40PM - 5:20PM</span></td>
+                                            <td class="align-middle">Language training</td> 
                                             <td class="align-middle">
-                                                <div class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <h6>50%</h6>  
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs">
                                                     </div>
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-primary" style="width: 50%"></div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div> 
+                                                </div>
+                                            </td> 
+                                            <td class="align-middle"> 
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Md Enamul Haque">
+                                                            <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs cursor-pointer">
+                                                        </a>
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-5.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+
+                                                    
+
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="">
+                                                            +4
+                                                        </a> 
                                                     </div>
                                                 </div>
-                                            </td>  
-                                            <td>Average</td>
-                                        </tr>  
-
-
-                                        <tr> 
-                                            <td class="text-center"><button data-bs-toggle="modal" data-bs-target="#view_detail" class="btn btn-sm btn-primary"><i class="mdi mdi-eye"></i> View</button></td>
-                                            <td>1</td>
-                                            <td>30 September,2023</td>
-                                            <td>10</td>
-                                            <td>5</td>
-                                            <td class="align-middle">
-                                                <div class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <h6>50%</h6>  
-                                                    </div>
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-primary" style="width: 50%"></div>
-                                                    </div>
-                                                </div>
-                                            </td>  
-                                            <td>Average</td>
-                                        </tr>  
-
-                                        <tr> 
-                                            <td class="text-center"><button data-bs-toggle="modal" data-bs-target="#view_detail" class="btn btn-sm btn-primary"><i class="mdi mdi-eye"></i> View</button></td>
-                                            <td>1</td>
-                                            <td>30 September,2023</td>
-                                            <td>10</td>
-                                            <td>5</td>
-                                            <td class="align-middle">
-                                                <div class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <h6>50%</h6>  
-                                                    </div>
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-primary" style="width: 50%"></div>
-                                                    </div>
-                                                </div>
-                                            </td>  
-                                            <td>Average</td>
-                                        </tr>  
+                                             </td>
+                                        </tr>
 
                                         <tr> 
-                                            <td class="text-center"><button data-bs-toggle="modal" data-bs-target="#view_detail" class="btn btn-sm btn-primary"><i class="mdi mdi-eye"></i> View</button></td>
-                                            <td>1</td>
-                                            <td>30 September,2023</td>
-                                            <td>10</td>
-                                            <td>5</td>
-                                            <td class="align-middle">
-                                                <div class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <h6>50%</h6>  
+                                            <td class="text-center"><a href="training_detail.html" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a></td>
+                                            <td class="text-center">1</td> 
+                                            <td class="text-center">12 Nov, 2023 <br> <span class="badge badge-label-primary">4:40PM - 5:20PM</span></td>
+                                            <td>Digital Marketing Strategies </td> 
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs">
                                                     </div>
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-primary" style="width: 50%"></div>
-                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div> 
                                                 </div>
-                                            </td>  
-                                            <td>Average</td>
-                                        </tr>  
+                                            </td> 
+                                            <td class="fs-12"> 
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Md Enamul Haque">
+                                                            <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs cursor-pointer">
+                                                        </a>
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-5.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div> 
+                                                </div>
+                                             </td>
+                                        </tr>
 
                                         <tr> 
-                                            <td class="text-center"><button data-bs-toggle="modal" data-bs-target="#view_detail" class="btn btn-sm btn-primary"><i class="mdi mdi-eye"></i> View</button></td>
-                                            <td>1</td>
-                                            <td>30 September,2023</td>
-                                            <td>10</td>
-                                            <td>5</td>
-                                            <td class="align-middle">
-                                                <div class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <h6>50%</h6>  
+                                            <td class="text-center"><a href="training_detail.html" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a></td>
+                                            <td class="text-center">1</td> 
+                                            <td class="text-center">06 Dec, 2023 <br> <span class="badge badge-label-primary">4:40PM - 5:20PM</span></td>
+                                            <td>Content Marketing Mastery</td> 
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs">
                                                     </div>
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-primary" style="width: 50%"></div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div> 
+                                                </div>
+                                            </td> 
+                                            <td class="fs-12"> 
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Md Enamul Haque">
+                                                            <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs cursor-pointer">
+                                                        </a>
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-5.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="">
+                                                            +3
+                                                        </a> 
                                                     </div>
                                                 </div>
-                                            </td>  
-                                            <td>Average</td>
-                                        </tr>  
+                                             </td>
+                                        </tr>
 
                                         <tr> 
-                                            <td class="text-center"><button data-bs-toggle="modal" data-bs-target="#view_detail" class="btn btn-sm btn-primary"><i class="mdi mdi-eye"></i> View</button></td>
-                                            <td>1</td>
-                                            <td>30 September,2023</td>
-                                            <td>10</td>
-                                            <td>5</td>
-                                            <td class="align-middle">
-                                                <div class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <h6>50%</h6>  
+                                            <td class="text-center"><a href="training_detail.html" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a></td>
+                                            <td class="text-center">1</td> 
+                                            <td class="text-center">06 Dec, 2023 <br> <span class="badge badge-label-primary">4:40PM - 5:20PM</span></td>
+                                            <td>Data-Driven</td> 
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs">
                                                     </div>
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-primary" style="width: 50%"></div>
-                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div> 
                                                 </div>
-                                            </td>  
-                                            <td>Average</td>
-                                        </tr>  
+                                            </td> 
+                                            <td class="fs-12"> 
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Md Enamul Haque">
+                                                            <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs cursor-pointer">
+                                                        </a>
+                                                    </div>
+                                                  
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-5.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+
+                                                    
+                                                </div>
+                                             </td>
+                                        </tr>
 
                                         <tr> 
-                                            <td class="text-center"><button data-bs-toggle="modal" data-bs-target="#view_detail" class="btn btn-sm btn-primary"><i class="mdi mdi-eye"></i> View</button></td>
-                                            <td>1</td>
-                                            <td>30 September,2023</td>
-                                            <td>10</td>
-                                            <td>5</td>
-                                            <td class="align-middle">
-                                                <div class="">
-                                                    <div class="d-flex justify-content-between">
-                                                        <h6>50%</h6>  
+                                            <td class="text-center"><a href="training_detail.html" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a></td>
+                                            <td class="text-center">1</td> 
+                                            <td class="text-center">06 Dec, 2023 <br> <span class="badge badge-label-primary">4:40PM - 5:20PM</span></td>
+                                            <td>Branding and Positioning</td> 
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs">
                                                     </div>
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-primary" style="width: 50%"></div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div> 
+                                                </div>
+                                            </td> 
+                                            <td class="fs-12"> 
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Md Enamul Haque">
+                                                            <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs cursor-pointer">
+                                                        </a>
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-5.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="">
+                                                            +3
+                                                        </a> 
                                                     </div>
                                                 </div>
-                                            </td>  
-                                            <td>Average</td>
-                                        </tr>  
+                                             </td>
+                                        </tr>
+
+                                        <tr> 
+                                            <td class="text-center"><a href="training_detail.html" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a></td>
+                                            <td class="text-center">1</td> 
+                                            <td class="text-center">06 Dec, 2023 <br> <span class="badge badge-label-primary">4:40PM - 5:20PM</span></td>
+                                            <td>Lead Generation Tactics</td> 
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div> 
+                                                </div>
+                                            </td> 
+                                            <td class="fs-12"> 
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Md Enamul Haque">
+                                                            <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs cursor-pointer">
+                                                        </a>
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-5.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="">
+                                                            +3
+                                                        </a> 
+                                                    </div>
+                                                </div>
+                                             </td>
+                                        </tr>
+
+                                        <tr> 
+                                            <td class="text-center"><a href="training_detail.html" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a></td>
+                                            <td class="text-center">1</td> 
+                                            <td class="text-center">06 Dec, 2023 <br> <span class="badge badge-label-primary">4:40PM - 5:20PM</span></td>
+                                            <td>Effective Communication</td> 
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div> 
+                                                </div>
+                                            </td> 
+                                            <td class="fs-12"> 
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Md Enamul Haque">
+                                                            <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs cursor-pointer">
+                                                        </a>
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                   
+                                                </div>
+                                             </td>
+                                        </tr>
+
+                                        <tr> 
+                                            <td class="text-center"><a href="training_detail.html" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> View</a></td>
+                                            <td class="text-center">1</td> 
+                                            <td class="text-center">06 Dec, 2023 <br> <span class="badge badge-label-primary">4:40PM - 5:20PM</span></td>
+                                            <td>Personal Branding</td> 
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                    </div> 
+                                                </div>
+                                            </td> 
+                                            <td class="fs-12"> 
+                                                <div class="avatar-group">
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Md Enamul Haque">
+                                                            <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs cursor-pointer">
+                                                        </a>
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="" data-bs-toggle="tooltip" title="Jamilur Rahman">
+                                                            <img src="../assets/images/users/avatar-5.png" alt="Avatar image" class="avatar-2xs">
+                                                        </a> 
+                                                    </div>
+
+                                                    <div class="avatar avatar-circle avatar-circle-sm">
+                                                        <a href="">
+                                                            +3
+                                                        </a> 
+                                                    </div>
+                                                </div>
+                                             </td>
+                                        </tr>
+
+                                        
+  
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                    </div> 
-                </div> 
-            </div> 
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div> <!-- container-fluid -->
         </div>
 
         <footer class="footer">
@@ -654,16 +930,7 @@
 </div>
 <!-- end layout-wrapper -->
 
-
-<div class="custom-setting bg-primary pe-0 d-flex flex-column rounded-start">
-    <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm rounded-end-0" id="light-dark-mode">
-        <i class="mdi mdi-brightness-7 align-middle"></i>
-        <i class="mdi mdi-white-balance-sunny align-middle"></i>
-    </button>
-    <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm" data-toggle="fullscreen">
-        <i class="mdi mdi-arrow-expand-all align-middle"></i>
-    </button> 
-</div>
+ 
 
 
 <!-- Rightbar Sidebar -->
@@ -803,13 +1070,13 @@
                                 <span>Meeting with</span>
                                 <div class="avatar-group ms-2">
                                     <div class="avatar avatar-circle">
-                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                 </div>
                             </div>
@@ -847,77 +1114,7 @@
             </div>
         </div>
     </div> <!-- end card-->
-</div> 
- 
- 
-<!-- chart modal   -->
-<div class="modal fade" id="view_detail">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="card"> 
-                <div class="card-body">
-                    <h3 class="card-title">Task Details <span class='text-primary'>[1 Decemer,2023]</span></h3>
-                    <div class="timeline timeline-timed"> 
-                        <div class="timeline-item">
-                            <span class="timeline-time">14:00</span>
-                            <div class="timeline-pin"><i class="fas fa-calendar-check fs-16 text-primary"></i></div>
-                            <div class="timeline-content">
-                                <p class="mb-0">Received a new feedback on <a href="#">GoFinance</a> App product.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="timeline-time">15:20</span>
-                            <div class="timeline-pin"><i class="fas fa-calendar-times fs-16 text-danger"></i></div>
-                            <div class="timeline-content">
-                                <p class="mb-0">Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="timeline-time">17:00</span>
-                            <div class="timeline-pin"><i class="fas fa-calendar-times fs-16 text-danger"></i></div>
-                            <div class="timeline-content">
-                                <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <span class="timeline-time">17:00</span>
-                            <div class="timeline-pin"><i class="fas fa-calendar-times fs-16 text-danger"></i></div>
-                            <div class="timeline-content">
-                                <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <span class="timeline-time">17:00</span>
-                            <div class="timeline-pin"><i class="fas fa-calendar-check fs-16 text-primary"></i></div>
-                            <div class="timeline-content">
-                                <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <span class="timeline-time">17:00</span>
-                            <div class="timeline-pin"><i class="fas fa-calendar-check fs-16 text-primary"></i></div>
-                            <div class="timeline-content">
-                                <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <span class="timeline-time">17:00</span>
-                            <div class="timeline-pin"><i class="fas fa-calendar-check fs-16 text-primary"></i></div>
-                            <div class="timeline-content">
-                                <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </div>
 </div>
-
 
 <!-- JAVASCRIPT -->
 <script src="../assets/libs/jquery/jquery.min.js"></script>
@@ -926,23 +1123,18 @@
 <script src="../assets/libs/simplebar/simplebar.min.js"></script>
 <script src="../assets/libs/node-waves/waves.min.js"></script>
 
-<script src="../assets/libs/select2/js/select2.min.js"></script> 
-<script src="../assets/js/pages/form-select2.init.js"></script>
-
-
-<!-- apexcharts -->
-<script src="../assets/libs/apexcharts/apexcharts.min.js"></script>  
-<!-- apexcharts init -->
-<script src="../assets/js/pages/apexcharts-column.init.js"></script>
+<script src="../assets/libs/parsleyjs/parsley.min.js"></script>
 
 <script src="../assets/libs/moment/min/moment.min.js"></script>
-<script src="../assets/libs/daterangepicker/daterangepicker.js"></script> 
-
+<script src="../assets/libs/daterangepicker/daterangepicker.js"></script>  
 <script src="../assets/js/pages/form-rangepicker.init.js"></script>
-  
+
+<script>
+    getDateRange('filter_input',true);
+</script>
+
 <script src="../assets/js/app.js"></script>
  
-
 </body>
 
 
