@@ -232,7 +232,25 @@ a{
     background-color: var(--primary);
     border-color: var(--primary);
 }
-  
+.cursor-pointer{
+    cursor: pointer !important;
+}
+.page_header_logo{
+    width: 50px;
+}
+
+.bold-sm{
+    font-weight: 400 !important;
+}
+.bold-md{
+    font-weight: 500 !important;
+}
+.bold-lg{
+    font-weight: 600 !important;
+}  
+.bold-2xl{
+    font-weight: 700 !important;
+}
 
    
  

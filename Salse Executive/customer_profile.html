@@ -6,12 +6,13 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Customer List | Way Housing Pvt Ltd</title>
+    <title>Dashboard | Way Housing Pvt Ltd </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
     
     <!-- dark layout js -->
     <script src="../assets/js/pages/layout.js"></script>
@@ -20,10 +21,11 @@
     <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-     
+    <!-- simplebar css -->
+    <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-  
+
     <link rel="stylesheet" href="../assets/css/custom.css">
 
 </head>
@@ -31,7 +33,7 @@
 <body>
 
 <div id="layout-wrapper">
-
+ 
 <!-- Start topbar -->
 <header id="page-topbar">
     <div class="navbar-header">
@@ -305,74 +307,102 @@
                         <span>Dashboard</span>
                     </a>
                 </li>  
+  
 
-                <li class="menu-title">Basic</li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-network-wired"></i>
-                        <span>Frelancers</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Freelancer List</a></li> 
-                        <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Join Freelancer</a></li> 
-                    </ul>
-                </li> 
+                <li class="menu-title">Task</li> 
 
                 <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-handshake"></i>
-                        <span>Customers</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="customer_list.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Customer List</a></li> 
-                        <li><a href="customer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Customer Entry</a></li> 
-                    </ul>
-                </li> 
-
-                <li class="menu-title">Task</li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-directions"></i>
-                        <span>Cold Calling</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="cold_callings.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Cold Callings</a></li> 
-                        <li><a href="cold_calling_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Cold-Calling Entry</a></li> 
-                    </ul>
-                </li> 
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
+                    <a href="leads.html" class="">
                         <i class="fas fa-people-arrows"></i>
                         <span>Leads</span>
                     </a>
+                </li>  
+  
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-teach"></i>
+                        <span>Presentation</span>
+                    </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="leads.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Leads</a></li> 
-                        <li><a href="lead_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Leads</a></li> 
+                        <li><a href="presentation.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Presentations</a></li> 
+                        <li><a href="presentation_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Presentation</a></li> 
+                    </ul>
+                </li> 
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-car"></i>
+                        <span>Visit Analysis</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="project_visit.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Visit Analyses</a></li> 
+                        <li><a href="project_visit_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Visit Analysis</a></li> 
+                    </ul>
+                </li> 
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-human-greeting"></i>
+                        <span>Follow Up</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="follow_ups.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Follow Ups</a></li> 
+                        <li><a href="follow_up_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Follow Up</a></li> 
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
                         <i class="mdi mdi-google-analytics"></i>
-                        <span>Lead Analysis</span>
+                        <span>Follow Up Analysis</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="lead_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Lead Analyses</a></li> 
-                        <li><a href="lead_analysis_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Lead Analysis</a></li> 
+                        <li><a href="follow_up_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Follow Up Analyses</a></li> 
+                        <li><a href="follow_up_analyses_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Analyses</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Negotiation</span>
+                    </a> 
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="negotiations.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiations</a></li> 
+                        <li><a href="negotiation_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Negotiations</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-chart-bar"></i>
+                        <span>Negotiation Analysis</span>
+                    </a> 
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="negotiation_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiation Analyses</a></li> 
+                        <li><a href="negotiation_analyses_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Entry Analysis</a></li> 
                     </ul>
                 </li>
                 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-project-diagram"></i>
-                        <span>Prospectings</span>
-                    </a>
+                        <i class=" fas fa-check-double"></i>
+                        <span>Sales</span>
+                    </a>  
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="prospecting.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Prospectings</a></li> 
-                        <li><a href="prospectings_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Prospectings</a></li> 
+                        <li><a href="sales.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Sales</a></li> 
+                        <li><a href="sales_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Sales</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="fas fa-user-times"></i>
+                        <span>Rejection</span>
+                    </a>  
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="rejection.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Rejections</a></li> 
+                        <li><a href="rejection_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Rejection Analysis</a></li> 
                     </ul>
                 </li> 
 
@@ -425,116 +455,143 @@
 </div>
 <!-- ========== End Sidebar Start ========== --> 
 
-
     <!-- Start right Content here -->
-
     <div class="main-content">
+
         <div class="page-content">
             <div class="container-fluid">
+ 
 
-                <!-- start page title -->
                 <div class="row">
-                    <div class="col-12">
-                        <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Daily Task</h4>
+                    <div class="col-xl-4">
+                        <div class="card overflow-hidden">
+                            <div class="bg-primary-subtle">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="text-primary p-3 mb-3">
+                                            <h5 class="text-primary">Follow Up</h5> 
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="align-self-end">
+                                            <img src="../assets/images/contact.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body pt-0 pb-0">
+                                <div class="row align-items-start">
+                                    <div class="col-sm-3">
+                                        <div class="avatar-md mb-3 mt-n4">
+                                            <img src="../assets/images/users/avatar-6.png" alt="" class="img-fluid avatar-circle bg-light p-2 border-2 border-primary">
+                                        </div> 
+                                    </div>
 
-                            <div class="page-title-right">
-                                <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Daily Task</li>
-                                </ol>
+                                    <div class="col-sm-9 mt-2">
+                                        <div class="row ms-3">
+                                            <h5 class="fs-15 mb-0">MD Enamul Haque</h5>
+                                            <p class="text-muted mb-0">Software Engineer</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
+                            <div class="card-body border-top">
+                                <h4 class="card-title mb-4">About</h4>
+                                <p class="text-muted mb-4">Hi I'm Charlie Stone,has been the industry's standard dummy text To an English person, it will seem like simplified English, as a skeptical Cambridge.</p>
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap table-borderless mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><i class="mdi mdi-account align-middle text-primary me-2"></i> Full Name :</th>
+                                                <td>Charlie Stone</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><i class="mdi mdi-cellphone align-middle text-primary me-2"></i> Mobile :</th>
+                                                <td>(123) 123 1234</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><i class="mdi mdi-email text-primary me-2"></i> E-mail :</th>
+                                                <td>cynthiaskote@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><i class="mdi mdi-google-maps text-primary me-2"></i> Location :</th>
+                                                <td>California, United States</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- end card --> 
+                    </div>
+
+                    <div class="col-xl-8">
+                       
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Customer Activities</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="timeline timeline-zigzag">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-circle text-primary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">
+                                                <p class="m-0 bold-lg">Customer Entry By "Enamul Haque"</p>
+                                                <p class="m-0 fs-10">3 Dec, 2023</p>
+                                                Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna elit enim at minim veniam quis nostrud
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-circle text-success"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">
+                                                <p class="m-0 bold-lg">Prospecting By "Enamul Haque"</p>
+                                                <p class="m-0 fs-10">12 Dec, 2023</p>
+                                                Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna elit enim at minim veniam quis nostrud
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-circle text-danger"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">
+                                                <p class="m-0 bold-lg">Cold Calling By "Enamul Haque"</p>
+                                                <p class="m-0 fs-10">30 Dec, 2023</p>
+                                                Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna elit enim at minim veniam quis nostrud
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-circle text-info"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">
+                                                <p class="m-0 bold-lg">Lead By "Enamul Haque"</p>
+                                                <p class="m-0 fs-10">30 Dec, 2023</p>
+                                                Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna elit enim at minim veniam quis nostrud
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- end page title -->
-
-             
-              
-                <div class="row"> 
-                    <div class="col-12">
-
-                        
-                        <div class="card"> 
-                            <div class="card-body">
-                                <h3 class="card-title">Today Task</h3>
-                                <div class="timeline timeline-timed">
-                                    <div class="timeline-item">
-                                        <span class="timeline-time">10:00</span>
-                                        <div class="timeline-pin"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="checked"></div>
-                                        <div class="timeline-content">
-                                            <div>
-                                                <span>Meeting with Enamul, Jamil in Dhaka</span> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <span class="timeline-time">12:45</span>
-                                        <div class="timeline-pin"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="checked"></div>
-                                        <div class="timeline-content">
-                                            <p class="mb-0">Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna elit enim at minim veniam quis nostrud</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <span class="timeline-time">14:00</span>
-                                        <div class="timeline-pin"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></div>
-                                        <div class="timeline-content">
-                                            <p class="mb-0">Received a new feedback on <a href="#">GoFinance</a> App product.</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <span class="timeline-time">15:20</span>
-                                        <div class="timeline-pin"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></div>
-                                        <div class="timeline-content">
-                                            <p class="mb-0">Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna.</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <span class="timeline-time">17:00</span>
-                                        <div class="timeline-pin"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></div>
-                                        <div class="timeline-content">
-                                            <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
- 
-
-                        <div class="card"> 
-                            <div class="card-body">
-                                <h3 class="card-title">Tomorrow Task</h3>
-                                <div class="timeline timeline-timed"> 
-                                    <div class="timeline-item">
-                                        <span class="timeline-time">14:00</span>
-                                        <div class="timeline-pin"><i class=" fas fa-dot-circle"></i></div>
-                                        <div class="timeline-content">
-                                            <p class="mb-0">Received a new feedback on <a href="#">GoFinance</a> App product.</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <span class="timeline-time">15:20</span>
-                                        <div class="timeline-pin"><i class=" fas fa-dot-circle"></i></div>
-                                        <div class="timeline-content">
-                                            <p class="mb-0">Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna.</p>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <span class="timeline-time">17:00</span>
-                                        <div class="timeline-pin"><i class=" fas fa-dot-circle"></i></div>
-                                        <div class="timeline-content">
-                                            <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div> <!-- end col -->
-                </div>
                 <!-- end row -->
-            </div> <!-- container-fluid -->
+            </div>
+            <!-- container-fluid -->
         </div>
+        <!-- End Page-content -->
 
         <footer class="footer">
             <div class="container-fluid">
@@ -550,23 +607,11 @@
                 </div>
             </div>
         </footer>
-
     </div>
     <!-- end main content-->
 </div>
 <!-- end layout-wrapper -->
-
-
-<div class="custom-setting bg-primary pe-0 d-flex flex-column rounded-start">
-    <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm rounded-end-0" id="light-dark-mode">
-        <i class="mdi mdi-brightness-7 align-middle"></i>
-        <i class="mdi mdi-white-balance-sunny align-middle"></i>
-    </button>
-    <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-sm" data-toggle="fullscreen">
-        <i class="mdi mdi-arrow-expand-all align-middle"></i>
-    </button>
-  
-</div>
+ 
 
 
 <!-- Rightbar Sidebar -->
@@ -750,21 +795,28 @@
             </div>
         </div>
     </div> <!-- end card-->
-</div> 
- 
- 
-
+</div>
 
 <!-- JAVASCRIPT -->
 <script src="../assets/libs/jquery/jquery.min.js"></script>
 <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/libs/metismenu/metisMenu.min.js"></script>
 <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-<script src="../assets/libs/node-waves/waves.min.js"></script> 
-  
-<script src="../assets/js/app.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+
+ 
+<!-- apexcharts -->
+<script src="../assets/libs/apexcharts/apexcharts.min.js"></script>  
+<!-- apexcharts init -->
+<script src="../assets/js/pages/apexcharts-column.init.js"></script>
  
 
+<script>
+    barChart("abc"); 
+</script>
+
+<!-- App js -->
+<script src="../assets/js/app.js"></script>
 </body>
 
 

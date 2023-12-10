@@ -1,1 +1,37 @@
-"use strict";$(function(){var t="rtl"===$("html").attr("dir")?"right":"left";$("#datepicker-1").datepicker({orientation:t,autoclose:!0}),$("#datepicker-2").datepicker({orientation:t,todayHighlight:!0}),$("#datepicker-3").datepicker({orientation:t,todayBtn:"linked",clearBtn:!0,todayHighlight:!0}),$("#datepicker-4").datepicker({orientation:t,multidate:!0,multidateSeparator:", ",todayHighlight:!0}),$("#datepicker-5").datepicker({orientation:t,daysOfWeekDisabled:"0",daysOfWeekHighlighted:"3,4",todayHighlight:!0}),$("#datepicker-6").datepicker({orientation:t,calendarWeeks:!0}),$(".input-daterange").datepicker({orientation:t,todayHighlight:!0}),$("#datepicker-7").datepicker({orientation:t,language:"ru"}),$("#datepicker-8").datepicker({orientation:t,todayHighlight:!0})});
+"use strict";
+
+$(function () {
+    var direction = $("html").attr("dir");
+    var orientation = direction === "rtl" ? "right" : "left";
+
+
+    $(".datepicker").each(function () {  
+        // var placeholder = $(this).attr("placeholder") || "Select Item";
+        // var allowClear = $(this).is("[allowClear]"); 
+        var button = $(this).is("[button]")
+        var multidate = $(this).is("[multidate]")  
+        if(button){
+            $(this).datepicker({
+                orientation: orientation,
+                todayBtn: "linked",
+                clearBtn: true,
+                todayHighlight: true
+            });
+        }else if(multidate){
+            $(this).datepicker({
+                orientation: orientation,
+                multidate: true,
+                multidateSeparator: ", ",
+                todayHighlight: true
+            });
+        }else{
+            $(this).datepicker({
+                orientation: orientation,
+                autoclose: true,
+                todayHighlight: true, 
+            });
+        } 
+       
+    });
+ 
+});
