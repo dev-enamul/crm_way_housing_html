@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from Zoom IT.in/Zoom IT/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Nov 2023 10:05:31 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dashboard | Way Housing Pvt Ltd </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Zoom IT" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+
+    
+    <!-- dark layout js -->
+    <script src="../assets/js/pages/layout.js"></script>
+
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- simplebar css -->
+    <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../assets//css//custom.css">
+
+</head>
+
+<body>
+
+<div id="layout-wrapper">
+ 
+    <!-- Start topbar -->
+    <header id="page-topbar">
+        <div class="navbar-header">
+
+            <!-- Logo -->
+
+            <!-- Start Navbar-Brand -->
+            <div class="navbar-logo-box">
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="../assets/images/logo-sm.png" alt="logo-sm-dark" height="40px">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="../assets/images/logo-dark.png" alt="logo-dark" height="40px">
+                    </span>
+                </a>
+
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="../assets/images/logo-sm.png" alt="logo-sm-light" height="40px">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="../assets/images/logo-light.png" alt="logo-light" height="40px">
+                    </span>
+                </a>
+
+                <button type="button" class="btn btn-sm top-icon sidebar-btn" id="sidebar-btn">
+                    <i class="mdi mdi-menu-open align-middle fs-19"></i>
+                </button>
+            </div>
+            <!-- End navbar brand -->
+
+            <!-- Start menu -->
+            <div class="d-flex justify-content-between menu-sm px-3 ms-auto">
+                <div class="d-flex align-items-center gap-2">
+                    <div class="dropdown d-none d-lg-block">
+                        <button type="button" class="btn btn-primary btn-sm fs-14 d-inline" id="light-dark-mode">
+                            <i class="mdi mdi-brightness-7 align-middle"></i>
+                        </button>  
+                    </div>
+
+                    <div class="dropdown d-none d-lg-block">
+                        <button type="button" class="btn btn-primary btn-sm fs-14 d-inline" data-toggle="fullscreen">
+                            <i class="mdi mdi-arrow-expand-all align-middle"></i>
+                        </button>  
+                    </div> 
+                </div>
+
+                <div class="d-flex align-items-center gap-2"> 
+                    <!-- Start Notification --> 
+
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search nid/phone...">
+                            <span class="fab fa-sistrix fs-17 align-middle"></span>
+                        </div>
+                    </form>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn btn-sm top-icon" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bell align-middle"></i>
+                            <span class="btn-marker"><i class="marker marker-dot text-danger"></i><span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-md dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3 bg-info">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="text-white m-0"><i class="far fa-bell me-2"></i> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="badge bg-info-subtle text-info"> 8+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-primary me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-file-document-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">New report has been recived</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-success me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-cart-variant"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">Last order was completed</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hour ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-danger me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-account-group"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">Completed meeting canceled</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 5 hour ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-warning me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-send-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">New feedback received</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 6 hour ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-secondary me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-download-box"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">New update was available</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 day ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-info me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-hexagram-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">Your password was changed</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 2 day ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top">
+                                <div class="d-grid">
+                                    <a class="btn btn-sm btn-link font-size-14 text-center" href="notification.html">
+                                        <i class="mdi mdi-arrow-right-circle me-1"></i> View More..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Notification -->
+
+                    <!-- Start Activities -->
+
+                    <!-- <div class="d-inline-block activities">
+                        <button type="button" class="btn btn-sm top-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-rightsidabar">
+                            <i class="fas fa-table align-middle"></i>
+                        </button>
+                    </div> -->
+
+
+                    <!-- End Activities -->
+
+                    <!-- Start Profile -->
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn btn-sm top-icon p-0" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded avatar-2xs p-0" src="../assets/images/users/avatar-6.png" alt="Header Avatar">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-wide dropdown-menu-end dropdown-menu-animated overflow-hidden py-0">
+                            <div class="card border-0">
+                                <div class="card-header bg-primary rounded-0">
+                                    <div class="rich-list-item w-100 p-0">
+                                        <div class="rich-list-prepend">
+                                            <div class="avatar avatar-label-light avatar-circle">
+                                                <div class="avatar-display"><i class="fa fa-user-alt"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-content">
+                                            <h3 class="rich-list-title text-white">Md Enamul Haque</h3>
+                                            <span class="rich-list-subtitle text-white">admin@codubucks.in</span>
+                                        </div>
+                                        <div class="rich-list-append"><span class="badge badge-label-light fs-6">6+</span></div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="grid-nav grid-nav-flush grid-nav-action grid-nav-no-rounded">
+                                        <div class="grid-nav-row">
+                                            <a href="profile.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-address-card"></i></div>
+                                                <span class="grid-nav-content">Profile</span>
+                                            </a>
+
+                                            <a href="wallet.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-comments"></i></div>
+                                                <span class="grid-nav-content">Wallet</span>
+                                            </a>
+                                            <a href="training_schedule.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-clone"></i></div>
+                                                <span class="grid-nav-content">Training</span>
+                                            </a>
+                                        </div>
+                                        <div class="grid-nav-row">
+                                            <a href="today_task.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-calendar-check"></i></div>
+                                                <span class="grid-nav-content">Tasks</span>
+                                            </a>
+                                            <a href="index.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-sticky-note"></i></div>
+                                                <span class="grid-nav-content">Dashboard</span>
+                                            </a>
+                                            <a href="notification.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-bell"></i></div>
+                                                <span class="grid-nav-content">Notification</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer card-footer-bordered rounded-0"><a href="auth-login.html" class="btn btn-label-danger">Sign out</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Profile -->
+                </div>
+            </div>
+            <!-- End menu -->
+        </div>
+    </header>
+    <!-- End topbar -->
+
+    <!-- ========== Left Sidebar Start ========== --> 
+    <div class="sidebar-left"> 
+        <div data-simplebar class="h-100"> 
+            <!--- Sidebar-menu -->
+            <div id="sidebar-menu">
+                <!-- Left Menu Start -->
+                <ul class="left-menu list-unstyled" id="side-menu">
+                
+                    <li>
+                        <a href="index.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li> 
+
+                    <li class="menu-title">Task</li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Meeting</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Meeting Schedule</a></li> 
+                            <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Create Schedule</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Monthly Target</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Target Historyd</a></li> 
+                            <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Create Target</a></li> 
+                        </ul>
+                    </li>
+
+                    <li> 
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Training</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Training Schedule</a></li> 
+                            <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Create Schedule</a></li> 
+                        </ul>
+                    </li>
+
+
+                    <li class="menu-title">Report</li> 
+                    <li>
+                        <a href="salse_marketing_target_achivement.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>S&M Achivement</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title">Employee</li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Employee</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="join_employee.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Join Employee</a></li> 
+                            <li><a href="employies.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Employies</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="role.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Employee Role</span>
+                        </a>
+                    </li>  
+
+
+
+                    <li class="menu-title">Task</li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Frelancers</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Freelancer List</a></li> 
+                            <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Join Freelancer</a></li> 
+                        </ul>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-handshake"></i>
+                            <span>Customers</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="customer_list.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Customer List</a></li> 
+                            <li><a href="customer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Customer Entry</a></li> 
+                        </ul>
+                    </li>  
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-directions"></i>
+                            <span>Cold Calling</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="cold_callings.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Cold Callings</a></li> 
+                            <li><a href="cold_calling_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Cold-Calling Entry</a></li> 
+                        </ul>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-people-arrows"></i>
+                            <span>Leads</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="leads.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Leads</a></li> 
+                            <li><a href="lead_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Leads</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-google-analytics"></i>
+                            <span>Lead Analysis</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="lead_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Lead Analyses</a></li> 
+                            <li><a href="lead_analysis_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Lead Analysis</a></li> 
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Prospectings</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="prospecting.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Prospectings</a></li> 
+                            <li><a href="prospectings_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Prospectings</a></li> 
+                        </ul>
+                    </li> 
+    
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-teach"></i>
+                            <span>Presentation</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="presentation.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Presentations</a></li> 
+                            <li><a href="presentation_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Presentation</a></li> 
+                        </ul>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-car"></i>
+                            <span>Visit Analysis</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="project_visit.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Visit Analyses</a></li> 
+                            <li><a href="project_visit_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Visit Analysis</a></li> 
+                        </ul>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-human-greeting"></i>
+                            <span>Follow Up</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="follow_ups.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Follow Ups</a></li> 
+                            <li><a href="follow_up_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Follow Up</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-google-analytics"></i>
+                            <span>Follow Up Analysis</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="follow_up_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Follow Up Analyses</a></li> 
+                            <li><a href="follow_up_analyses_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Analyses</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Negotiation</span>
+                        </a> 
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="negotiations.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiations</a></li> 
+                            <li><a href="negotiation_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Negotiations</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-chart-bar"></i>
+                            <span>Negotiation Analysis</span>
+                        </a> 
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="negotiation_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiation Analyses</a></li> 
+                            <li><a href="negotiation_analyses_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Entry Analysis</a></li> 
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class=" fas fa-check-double"></i>
+                            <span>Sales</span>
+                        </a>  
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="sales.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Sales</a></li> 
+                            <li><a href="sales_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Sales</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-user-times"></i>
+                            <span>Rejection</span>
+                        </a>  
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="rejection.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Rejections</a></li> 
+                            <li><a href="rejection_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Rejection Analysis</a></li> 
+                        </ul>
+                    </li>  
+                    <li class="menu-title">Setting</li>  
+                    <li>
+                        <a href="professions.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Profession</span>
+                        </a>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-chart-bar"></i>
+                            <span>Location</span>
+                        </a> 
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="division.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Division</a></li> 
+                            <li><a href="district.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> District</a></li> 
+                            <li><a href="upazila.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Upazila/Thana</a></li> 
+                            <li><a href="union.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Union</a></li> 
+                            <li><a href="village.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Village</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="trainings.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Training</span>
+                        </a>
+                    </li> 
+
+                    <li>
+                        <a href="position.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Employee Position</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="teritory.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Teritory</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="commision.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Commision</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <!-- ========== End Sidebar Start ========== --> 
+
+    <div class="main-content">
+        <div class="page-content">
+            <div class="container-fluid"> 
+               
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card"> 
+                            <div class="card-header">
+                                <h4 class="mb-sm-0">Permission for Marketing Executive</h4> 
+                            </div>
+                            <div class="card-body"> 
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_create" name="permission" id="flexCheckChecked" checked>
+                                             <label class="form-check-label" for="flexCheckChecked">User Create</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_edit" name="permission" id="flexCheckChecked"> 
+                                            <label class="form-check-label" for="flexCheckChecked">User Edit</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_delete" name="permission" id="flexCheckChecked"> 
+                                            <label class="form-check-label" for="flexCheckChecked">User Delete</label>
+                                        </div>
+                                    </div> 
+                                    <!-- Other Menu Items ... -->
+
+                                    <!-- Follow Up Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="follow_ups" name="permission" id="permission_follow_ups">
+                                            <label class="form-check-label" for="permission_follow_ups">Follow Ups</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_follow_up" name="permission" id="permission_create_follow_up">
+                                            <label class="form-check-label" for="permission_create_follow_up">Create Follow Up</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Sales Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="sales" name="permission" id="permission_sales">
+                                            <label class="form-check-label" for="permission_sales">Sales</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_sales" name="permission" id="permission_create_sales" checked>
+                                            <label class="form-check-label" for="permission_create_sales">Create Sales</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Negotiation Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="negotiations" name="permission" id="permission_negotiations">
+                                            <label class="form-check-label" for="permission_negotiations">Negotiations</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_negotiation" name="permission" id="permission_create_negotiation">
+                                            <label class="form-check-label" for="permission_create_negotiation">Create Negotiation</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Setting Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="professions" name="permission" id="permission_professions" checked>
+                                            <label class="form-check-label" for="permission_professions">Profession</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="division" name="permission" id="permission_division">
+                                            <label class="form-check-label" for="permission_division">Division</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+ 
+                                     <!-- Location Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="district" name="permission" id="permission_district">
+                                            <label class="form-check-label" for="permission_district">District</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="upazila" name="permission" id="permission_upazila">
+                                            <label class="form-check-label" for="permission_upazila">Upazila/Thana</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the location-related menu items -->
+
+                                    <!-- Training Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="trainings" name="permission" id="permission_trainings">
+                                            <label class="form-check-label" for="permission_trainings">Training</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_training" name="permission" id="permission_create_training">
+                                            <label class="form-check-label" for="permission_create_training">Create Training</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Teritory Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="teritory" name="permission" id="permission_teritory">
+                                            <label class="form-check-label" for="permission_teritory">Teritory</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Commission Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="commission" name="permission" id="permission_commission">
+                                            <label class="form-check-label" for="permission_commission">Commission</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_create" name="permission" id="flexCheckChecked">
+                                             <label class="form-check-label" for="flexCheckChecked">User Create</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_edit" name="permission" id="flexCheckChecked"> 
+                                            <label class="form-check-label" for="flexCheckChecked">User Edit</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_delete" name="permission" id="flexCheckChecked"> 
+                                            <label class="form-check-label" for="flexCheckChecked">User Delete</label>
+                                        </div>
+                                    </div> 
+                                    <!-- Other Menu Items ... -->
+
+                                    <!-- Follow Up Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="follow_ups" name="permission" id="permission_follow_ups">
+                                            <label class="form-check-label" for="permission_follow_ups">Follow Ups</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_follow_up" name="permission" id="permission_create_follow_up">
+                                            <label class="form-check-label" for="permission_create_follow_up">Create Follow Up</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Sales Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="sales" name="permission" id="permission_sales">
+                                            <label class="form-check-label" for="permission_sales">Sales</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_sales" name="permission" id="permission_create_sales">
+                                            <label class="form-check-label" for="permission_create_sales">Create Sales</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Negotiation Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="negotiations" name="permission" id="permission_negotiations">
+                                            <label class="form-check-label" for="permission_negotiations">Negotiations</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_negotiation" name="permission" id="permission_create_negotiation">
+                                            <label class="form-check-label" for="permission_create_negotiation">Create Negotiation</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Setting Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="professions" name="permission" id="permission_professions">
+                                            <label class="form-check-label" for="permission_professions">Profession</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="division" name="permission" id="permission_division">
+                                            <label class="form-check-label" for="permission_division">Division</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+ 
+                                     <!-- Location Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="district" name="permission" id="permission_district">
+                                            <label class="form-check-label" for="permission_district">District</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="upazila" name="permission" id="permission_upazila">
+                                            <label class="form-check-label" for="permission_upazila">Upazila/Thana</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the location-related menu items -->
+
+                                    <!-- Training Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="trainings" name="permission" id="permission_trainings">
+                                            <label class="form-check-label" for="permission_trainings">Training</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_training" name="permission" id="permission_create_training">
+                                            <label class="form-check-label" for="permission_create_training">Create Training</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Teritory Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="teritory" name="permission" id="permission_teritory">
+                                            <label class="form-check-label" for="permission_teritory">Teritory</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Commission Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="commission" name="permission" id="permission_commission">
+                                            <label class="form-check-label" for="permission_commission">Commission</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_create" name="permission" id="flexCheckChecked">
+                                             <label class="form-check-label" for="flexCheckChecked">User Create</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_edit" name="permission" id="flexCheckChecked"> 
+                                            <label class="form-check-label" for="flexCheckChecked">User Edit</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_delete" name="permission" id="flexCheckChecked"> 
+                                            <label class="form-check-label" for="flexCheckChecked">User Delete</label>
+                                        </div>
+                                    </div> 
+                                    <!-- Other Menu Items ... -->
+
+                                    <!-- Follow Up Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="follow_ups" name="permission" id="permission_follow_ups">
+                                            <label class="form-check-label" for="permission_follow_ups">Follow Ups</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_follow_up" name="permission" id="permission_create_follow_up">
+                                            <label class="form-check-label" for="permission_create_follow_up">Create Follow Up</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Sales Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="sales" name="permission" id="permission_sales">
+                                            <label class="form-check-label" for="permission_sales">Sales</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_sales" name="permission" id="permission_create_sales">
+                                            <label class="form-check-label" for="permission_create_sales">Create Sales</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Negotiation Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="negotiations" name="permission" id="permission_negotiations">
+                                            <label class="form-check-label" for="permission_negotiations">Negotiations</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_negotiation" name="permission" id="permission_create_negotiation">
+                                            <label class="form-check-label" for="permission_create_negotiation">Create Negotiation</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Setting Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="professions" name="permission" id="permission_professions">
+                                            <label class="form-check-label" for="permission_professions">Profession</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="division" name="permission" id="permission_division">
+                                            <label class="form-check-label" for="permission_division">Division</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+ 
+                                     <!-- Location Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="district" name="permission" id="permission_district">
+                                            <label class="form-check-label" for="permission_district">District</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="upazila" name="permission" id="permission_upazila">
+                                            <label class="form-check-label" for="permission_upazila">Upazila/Thana</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the location-related menu items -->
+
+                                    <!-- Training Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="trainings" name="permission" id="permission_trainings">
+                                            <label class="form-check-label" for="permission_trainings">Training</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_training" name="permission" id="permission_create_training">
+                                            <label class="form-check-label" for="permission_create_training">Create Training</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Teritory Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="teritory" name="permission" id="permission_teritory">
+                                            <label class="form-check-label" for="permission_teritory">Teritory</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Commission Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="commission" name="permission" id="permission_commission">
+                                            <label class="form-check-label" for="permission_commission">Commission</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_create" name="permission" id="flexCheckChecked">
+                                             <label class="form-check-label" for="flexCheckChecked">User Create</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_edit" name="permission" id="flexCheckChecked"> 
+                                            <label class="form-check-label" for="flexCheckChecked">User Edit</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="user_delete" name="permission" id="flexCheckChecked"> 
+                                            <label class="form-check-label" for="flexCheckChecked">User Delete</label>
+                                        </div>
+                                    </div> 
+                                    <!-- Other Menu Items ... -->
+
+                                    <!-- Follow Up Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="follow_ups" name="permission" id="permission_follow_ups">
+                                            <label class="form-check-label" for="permission_follow_ups">Follow Ups</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_follow_up" name="permission" id="permission_create_follow_up">
+                                            <label class="form-check-label" for="permission_create_follow_up">Create Follow Up</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Sales Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="sales" name="permission" id="permission_sales">
+                                            <label class="form-check-label" for="permission_sales">Sales</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_sales" name="permission" id="permission_create_sales">
+                                            <label class="form-check-label" for="permission_create_sales">Create Sales</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Negotiation Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="negotiations" name="permission" id="permission_negotiations">
+                                            <label class="form-check-label" for="permission_negotiations">Negotiations</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_negotiation" name="permission" id="permission_create_negotiation">
+                                            <label class="form-check-label" for="permission_create_negotiation">Create Negotiation</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Setting Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="professions" name="permission" id="permission_professions">
+                                            <label class="form-check-label" for="permission_professions">Profession</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="division" name="permission" id="permission_division">
+                                            <label class="form-check-label" for="permission_division">Division</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+ 
+                                     <!-- Location Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="district" name="permission" id="permission_district">
+                                            <label class="form-check-label" for="permission_district">District</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="upazila" name="permission" id="permission_upazila">
+                                            <label class="form-check-label" for="permission_upazila">Upazila/Thana</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the location-related menu items -->
+
+                                    <!-- Training Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="trainings" name="permission" id="permission_trainings">
+                                            <label class="form-check-label" for="permission_trainings">Training</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="create_training" name="permission" id="permission_create_training">
+                                            <label class="form-check-label" for="permission_create_training">Create Training</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Teritory Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="teritory" name="permission" id="permission_teritory">
+                                            <label class="form-check-label" for="permission_teritory">Teritory</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Repeat the structure for the rest of the menu items -->
+
+                                    <!-- Commission Menu -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="commission" name="permission" id="permission_commission">
+                                            <label class="form-check-label" for="permission_commission">Commission</label>
+                                        </div>
+                                    </div>
+ 
+
+                                </div> 
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div> <!-- container-fluid -->
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Zoom IT.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="http://Zoom IT.in/" target="_blank" class="text-muted">Zoom IT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </div>
+</div>
+<!-- end layout-wrapper -->
+ 
+    <div class="modal fade" id="create_profession">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header"> 
+                    <h5 class="modal-title">Create new profession</h5><button type="button" class="btn btn-sm btn-label-danger btn-icon" data-bs-dismiss="modal"><i class="mdi mdi-close"></i></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group mb-2">
+                            <label for="profession_name">Profession Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="profession_name" name="profession_name" required>
+                        </div>
+ 
+
+                        <div class="form-group mb-3">
+                            <label for="commision">Commision [%]</label>
+                            <input type="number" class="form-control" id="commision" value="0" name="commision" >
+                        </div> 
+
+                        <div class="form-group mb-2">
+                            <label for="permission">Permission <span class="text-danger">*</span></label>
+                            <select id="permission" class="select2" multiple search name="permission" required> 
+                                <option value="">Follow Up</option> 
+                                <option value="">Freelancer Join</option> 
+                                <option value="">Customer Join</option> 
+                                <option value="">Cold Calling</option>  
+                            </select> 
+                        </div>
+ 
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="text-end">
+                        <button class="btn btn-primary"><i class="fas fa-save"></i> Submit</button> <button class="btn btn-outline-danger"><i class="mdi mdi-refresh"></i> Reset</button>
+                    </div> 
+                </div>
+
+                <!-- <div class="modal-footer"><button class="btn btn-primary">Submit</button> <button class="btn btn-outline-danger">Reset</button></div> -->
+            </div>
+        </div>
+    </div>
+ 
+
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/jquery/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+
+ 
+<script src="../assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from Zoom IT.in/Zoom IT/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Nov 2023 10:06:06 GMT -->
+</html>

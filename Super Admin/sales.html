@@ -6,35 +6,36 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Freelancer Join | Way Housing Pvt Ltd</title>
+    <title>Salse | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
-
-    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
-
     
     <!-- dark layout js -->
     <script src="../assets/js/pages/layout.js"></script>
 
     <!-- Bootstrap Css -->
     <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    
+    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
     <!-- Icons Css -->
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- simplebar css -->
     <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
+
+    <link href="../assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/custom.css">
 
 </head>
 
 <body>
 
-<div id="layout-wrapper"> 
+<div id="layout-wrapper">
+
     
 <!-- Start topbar -->
 <header id="page-topbar">
@@ -89,7 +90,7 @@
 
                 <form class="app-search d-none d-lg-block">
                     <div class="position-relative">
-                        <input type="text" class="form-control select2" placeholder="Search nid/phone...">
+                        <input type="text" class="form-control" placeholder="Search nid/phone...">
                         <span class="fab fa-sistrix fs-17 align-middle"></span>
                     </div>
                 </form>
@@ -309,74 +310,102 @@
                         <span>Dashboard</span>
                     </a>
                 </li>  
+  
 
-                <li class="menu-title">Basic</li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-network-wired"></i>
-                        <span>Frelancers</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Freelancer List</a></li> 
-                        <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Join Freelancer</a></li> 
-                    </ul>
-                </li> 
+                <li class="menu-title">Task</li> 
 
                 <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-handshake"></i>
-                        <span>Customers</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="customer_list.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Customer List</a></li> 
-                        <li><a href="customer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Customer Entry</a></li> 
-                    </ul>
-                </li> 
-
-                <li class="menu-title">Task</li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-directions"></i>
-                        <span>Cold Calling</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="cold_callings.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Cold Callings</a></li> 
-                        <li><a href="cold_calling_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Cold-Calling Entry</a></li> 
-                    </ul>
-                </li> 
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
+                    <a href="leads.html" class="">
                         <i class="fas fa-people-arrows"></i>
                         <span>Leads</span>
                     </a>
+                </li>  
+  
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-teach"></i>
+                        <span>Presentation</span>
+                    </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="leads.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Leads</a></li> 
-                        <li><a href="lead_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Leads</a></li> 
+                        <li><a href="presentation.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Presentations</a></li> 
+                        <li><a href="presentation_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Presentation</a></li> 
+                    </ul>
+                </li> 
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-car"></i>
+                        <span>Visit Analysis</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="project_visit.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Visit Analyses</a></li> 
+                        <li><a href="project_visit_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Visit Analysis</a></li> 
+                    </ul>
+                </li> 
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-human-greeting"></i>
+                        <span>Follow Up</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="follow_ups.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Follow Ups</a></li> 
+                        <li><a href="follow_up_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Follow Up</a></li> 
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
                         <i class="mdi mdi-google-analytics"></i>
-                        <span>Lead Analysis</span>
+                        <span>Follow Up Analysis</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="lead_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Lead Analyses</a></li> 
-                        <li><a href="lead_analysis_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Lead Analysis</a></li> 
+                        <li><a href="follow_up_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Follow Up Analyses</a></li> 
+                        <li><a href="follow_up_analyses_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Analyses</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Negotiation</span>
+                    </a> 
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="negotiations.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiations</a></li> 
+                        <li><a href="negotiation_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Negotiations</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-chart-bar"></i>
+                        <span>Negotiation Analysis</span>
+                    </a> 
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="negotiation_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiation Analyses</a></li> 
+                        <li><a href="negotiation_analyses_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Entry Analysis</a></li> 
                     </ul>
                 </li>
                 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-project-diagram"></i>
-                        <span>Prospectings</span>
-                    </a>
+                        <i class=" fas fa-check-double"></i>
+                        <span>Sales</span>
+                    </a>  
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="prospecting.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Prospectings</a></li> 
-                        <li><a href="prospectings_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Prospectings</a></li> 
+                        <li><a href="sales.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Sales</a></li> 
+                        <li><a href="sales_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Sales</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="fas fa-user-times"></i>
+                        <span>Rejection</span>
+                    </a>  
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="rejection.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Rejections</a></li> 
+                        <li><a href="rejection_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Rejection Analysis</a></li> 
                     </ul>
                 </li> 
 
@@ -434,17 +463,17 @@
 
     <div class="main-content">
         <div class="page-content">
-            <div class="container-fluid"> 
+            <div class="container-fluid">
+
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Freelancer Entry</h4>
-
+                            <h4 class="mb-sm-0">Salse</h4> 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Freelancer Entry</li>
+                                    <li class="breadcrumb-item active">Salse</li>
                                 </ol>
                             </div>
 
@@ -454,278 +483,80 @@
                 <!-- end page title -->
 
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-12">
                         <div class="card"> 
                             <div class="card-body">
-                                <form class="needs-validation" novalidate>
-                                    <div class="row">
-                                        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="first_name" class="form-label">First name <span class="text-danger">*</span></label>
-                                                <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First name" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="last_name" class="form-label">Last name</label>
-                                                <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last name" value=""> 
-                                            </div>
+                                <div class="d-flex justify-content-between"> 
+                                    <div class="">
+                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
+                                            <button class="btn btn-primary buttons-copy buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-excel"></i> Excel</span>
+                                            </button>
+
+                                            <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-pdf"></i> PDF</span>
+                                            </button> 
                                         </div> 
-                                        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="profile_image" class="form-label">Profile Image</label>
-                                                <input type="file" name="profile_image" id="profile_image" class="form-control">  
-                                            </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
+                                            <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                                                <span><i class="fas fa-filter"></i> Filter</span>
+                                            </button> 
                                         </div>
+                                    </div>
+                               </div>
 
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="nid" class="form-label">NID</label>
-                                                <input type="file" name="nid" id="nid" class="form-control" > 
-                                            </div>
-                                        </div>
-
-                                        
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="profession" class="form-label">Profession <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="profession" id="profession" required>
-                                                    <option value="">Select Profession</option>
-                                                    <option value="">Doctors</option>
-                                                    <option value="">Lawyers</option> 
-                                                    <option value="">Banker</option>
-                                                    <option value="">Teacher</option>
-                                                    <option value="">Engineer</option>
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="marital_status" class="form-label">Marital Status <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="marital_status" id="marital_status" required>
-                                                    <option value="">Select Marital Status</option>
-                                                    <option value="">Married</option>
-                                                    <option value="">Unmarried</option>
-                                                    <option value="">Devorce</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="dob" class="form-label">Date of Birth <span class="text-danger">*</span></label>
-                                                <input type="date" name="dob" class="form-control" id="dob" required> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="gender" class="form-label">Gender <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="gender" id="gender" required>
-                                                    <option value="">Select Gender</option>
-                                                    <option value="">Male</option>
-                                                    <option value="">Female</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="email" class="form-label">Email Address</label>
-                                                <input type="email" name="email" class="form-control" id="email" placeholder="Email Number"> 
-                                                <div class="invalid-feedback">
-                                                    This field is invalid.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="division" class="form-label">Division <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="division" id="division" required>
-                                                    <option value="">Select Division</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="district" class="form-label">District <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="district" id="district" required>
-                                                    <option value="">Select District</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="upazila" class="form-label">Thana/Upazila <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="upazila" id="upazila" required>
-                                                    <option value="">Select Thana/Upazila</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="union" class="form-label">Union <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="union" id="union" required>
-                                                    <option value="">Select Union</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="village" class="form-label">Village</label>
-                                                <select class="form-select" name="village" id="village">
-                                                    <option value="">Select Village</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select>  
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="remark" class="form-label">Training Required</label>
-                                                <select class="form-select" name="training_required" id="village">
-                                                    <option value="">Select Training</option>
-                                                    <option value="">Spokent </option> 
-                                                    <option value="">Language </option> 
-                                                    <option value="">SOft Skill </option> 
-                                                    <option value="">Comunication </option> 
-                                                </select>
-                                            </div>
-                                        </div>
+                                <table class="table table-hover table-bordered table-striped dt-responsive nowrap fs-10" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>Action</th>
+                                            <th>S/N</th>
+                                            <th>Date</th>
+                                            <th>Name</th>
+                                            <th>Mobile</th>
+                                            <th>Address</th> 
+                                            <th>Project</th>
+                                            <th>Unit</th> 
+                                            <th>Unit Qty</th> 
+                                            <th>Unit Value</th> 
+                                            <th>Total Value</th> 
+                                            <th>Booking</th> 
+                                            <th>Freelancer</th> 
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr>
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="customer_profile.html">Customer Profile</a>
+                                                        <a class="dropdown-item" href="salse_details.html">Salse Details</a>  
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                            <td>1</td>
+                                            <td>5 Dec, 2023</td>
+                                            <td><a href="customer_profile.html">Md Enamul Haque</a></td>
+                                            <td>01796351081</td>
+                                            <td>2/1, Mohammadpur, Dhaka-1230</td>
+                                            <td>Musafir Plaza</td>
+                                            <td>Shop</td> 
+                                            <td>4</td> 
+                                            <td>$3555</td> 
+                                            <td>$3555656</td> 
+                                            <td>$100000</td> 
+                                         
+                                            <td>Md Jamil [FL154]</td>  
+                                        </tr> 
  
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Executive Co-Ordinate</label>
-                                                <select id="select2-1" name="freelancer">
-                                                    <option value="">Select Freelancer</option> 
-                                                    <option value="">Md Enamul Haque #FL1545 01796351081</option> 
-                                                    <option value="">Jamil Hosain #FL1545 01796351081</option> 
-                                                    <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
-                                                    <option value="">Suvo Hasan #FL1545 01796351081</option>  
-                                                </select>
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Co-Ordinate</label>
-                                                <select id="select2-2" name="freelancer">
-                                                    <option value="">Select Freelancer</option> 
-                                                    <option value="">Md Enamul Haque #FL1545 01796351081</option> 
-                                                    <option value="">Jamil Hosain #FL1545 01796351081</option> 
-                                                    <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
-                                                    <option value="">Suvo Hasan #FL1545 01796351081</option>  
-                                                </select>
-                                            </div>
-                                        </div>  
-
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <label for="remark" class="form-label">Comment</label>
-                                                <textarea class="form-control" id="remark" rows="2" name="remark"></textarea>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                      
-                                    <div>
-                                        <button class="btn btn-primary" type="submit">Submit</button>
-                                    </div>
-                                </form>
+                                    </tbody>
+                                </table>
                             </div>
-                        </div> 
-                    </div>
-                    <!-- end col -->
- 
+                        </div>
+                    </div> <!-- end col -->
                 </div>
                 <!-- end row -->
             </div> <!-- container-fluid -->
@@ -751,8 +582,6 @@
 </div>
 <!-- end layout-wrapper -->
  
-
-
 <!-- Rightbar Sidebar -->
 <div class="offcanvas offcanvas-end" id="offcanvas-rightsidabar">
     <div class="card h-100 rounded-0" data-simplebar="init">
@@ -890,13 +719,13 @@
                                 <span>Meeting with</span>
                                 <div class="avatar-group ms-2">
                                     <div class="avatar avatar-circle">
-                                        <img src="../../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                 </div>
                             </div>
@@ -936,20 +765,200 @@
     </div> <!-- end card-->
 </div>
 
+
+<!-- Filter Modal   -->
+
+ 
+
+<div class="offcanvas offcanvas-end" id="offcanvas">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Filter Leads</h5>
+        <button class="btn btn-label-danger btn-icon" data-bs-dismiss="offcanvas">
+            <i class="fa fa-times"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="row"> 
+ 
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="freelancer" class="form-label">Freelancer</label>
+                    <select id="freelancer" class="select2" name="freelancer" search>
+                        <option value="">All Freelancer</option> 
+                        <option value="">Md Enamul Haque </option> 
+                        <option value="">Jamil Hosain #FL1545 01796351081</option> 
+                        <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
+                        <option value="">Suvo Hasan #FL1545 01796351081</option>  
+                    </select> 
+                </div>
+            </div> 
+ 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="join_date" class="form-label">Join Date </label>
+                    <input class="form-control" id="join_date" name="join_date" default="All" type="text" value="" />   
+                </div>
+            </div>  
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="last_cold_calling" class="form-label">Last Cold Calling </label>
+                    <input class="form-control" name="last_cold_calling" default="All" id="last_cold_calling" type="text" value="" />   
+                </div>
+            </div> 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="possible_purchase_date" class="form-label">Possible Purchase Date</label>
+                    <input class="form-control daterangepicker-4" name="possible_purchase_date" default="All" id="possible_purchase_date" type="text" value="" />   
+                </div>
+            </div> 
+            
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="last_lead_date" class="form-label">Last Lead Date </label>
+                    <input class="form-control" name="last_lead_date" id="last_lead_date" default="All" type="text" value="" />   
+                </div>
+            </div> 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="presentation_date" class="form-label">Presentation Date</label>
+                    <input class="form-control daterangepicker-4" name="presentation_date" default="All" id="presentation_date" type="text" value="" />   
+                </div>
+            </div> 
+   
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="profession" class="form-label">Profession</label>
+                    <select class="select2" name="profession" id="profession">
+                        <option value="">All Profession</option>
+                        <option value="">Doctors</option>
+                        <option value="">Lawyers</option> 
+                        <option value="">Banker</option>
+                        <option value="">Teacher</option>
+                        <option value="">Engineer</option>
+                    </select>  
+                </div>
+            </div> 
+
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="project" class="form-label">Project</label>
+                    <select class="select2" search name="project" id="project">
+                        <option value="">All Project</option>
+                        <option value="">Cidy Plaza</option>
+                        <option value="">Metro Housing</option> 
+                        <option value="">Rana House</option> 
+                    </select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="upazila" class="form-label">Thana/Upazila </label>
+                    <select class="select2" name="upazila" id="upazila" required>
+                        <option value="">All Thana/Upazila</option>
+                        <option value="">Dhaka </option>
+                        <option value="">Chittagong </option> 
+                        <option value="">Rajshahi</option> 
+                        <option value="">Khulna </option> 
+                        <option value="">Barishal </option> 
+                        <option value="">Sylhet</option> 
+                        <option value="">Rangpur</option> 
+                        <option value="">Mymensingh</option>  
+                    </select> 
+                    <div class="invalid-feedback">
+                        This field is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="union" class="form-label">Union </label>
+                    <select class="select2" name="union" id="union" required>
+                        <option value="">All Union</option>
+                        <option value="">Dhaka </option>
+                        <option value="">Chittagong </option> 
+                        <option value="">Rajshahi</option> 
+                        <option value="">Khulna </option> 
+                        <option value="">Barishal </option> 
+                        <option value="">Sylhet</option> 
+                        <option value="">Rangpur</option> 
+                        <option value="">Mymensingh</option>  
+                    </select> 
+                    <div class="invalid-feedback">
+                        This field is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="village" class="form-label">Village</label>
+                    <select class="select2" name="village" id="village">
+                        <option value="">All Village</option>
+                        <option value="">Dhaka </option>
+                        <option value="">Chittagong </option> 
+                        <option value="">Rajshahi</option> 
+                        <option value="">Khulna </option> 
+                        <option value="">Barishal </option> 
+                        <option value="">Sylhet</option> 
+                        <option value="">Rangpur</option> 
+                        <option value="">Mymensingh</option>  
+                    </select>  
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="maritial_status" class="form-label">Marital status</label>
+                    <select class="select2" name="maritial_status" id="maritial_status">
+                        <option value="">All Marital</option>
+                        <option value="">Married</option>
+                        <option value="">Unmarried</option> 
+                        <option value="">Devorce</option> 
+                    </select>  
+                </div>
+            </div>  
+ 
+            <div class="text-end ">
+                <button class="btn btn-primary"><i class="fas fa-filter"></i> Filter</button> <button class="btn btn-outline-danger"><i class="mdi mdi-refresh"></i> Reset</button>
+            </div> 
+
+        </div>
+    </div>
+</div>
+
 <!-- JAVASCRIPT -->
-    <script src="../assets/libs/jquery/jquery.min.js"></script>
-    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/jquery/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
 
-    <script src="../assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="../assets/libs/select2/js/select2.min.js"></script> 
+<script src="../assets/js/pages/form-select2.init.js"></script>
 
-    <script src="../assets/js/pages/form-validation.init.js"></script>
+<script src="../assets/libs/moment/min/moment.min.js"></script>
+<script src="../assets/libs/daterangepicker/daterangepicker.js"></script>  
+<script src="../assets/js/pages/form-rangepicker.init.js"></script>
 
-    <script src="../assets/libs/select2/js/select2.min.js"></script> 
-    <script src="../assets/js/pages/form-select2.init.js"></script>
+<script>
+    getDateRange('join_date');
+    getDateRange('last_cold_calling');
+    getDateRange('possible_purchase_date');
+    getDateRange('last_lead_date');
+    getDateRange('presentation_date')
+</script>
 
-    <script src="../assets/js/app.js"></script>
+  
+<script src="../assets/js/app.js"></script>
+
 </body>
+
+
+<!-- Mirrored from Zoom IT.in/Zoom IT/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Nov 2023 10:06:06 GMT -->
 </html>

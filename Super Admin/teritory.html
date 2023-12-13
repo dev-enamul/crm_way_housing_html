@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from Zoom IT.in/Zoom IT/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Nov 2023 10:05:31 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>Teritory | Way Housing Pvt Ltd </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Zoom IT" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+
+    
+    <!-- dark layout js -->
+    <script src="../assets/js/pages/layout.js"></script>
+
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- simplebar css -->
+    <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../assets//css//custom.css">
+
+</head>
+
+<body>
+
+<div id="layout-wrapper">
+ 
+    <!-- Start topbar -->
+    <header id="page-topbar">
+        <div class="navbar-header">
+
+            <!-- Logo -->
+
+            <!-- Start Navbar-Brand -->
+            <div class="navbar-logo-box">
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="../assets/images/logo-sm.png" alt="logo-sm-dark" height="40px">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="../assets/images/logo-dark.png" alt="logo-dark" height="40px">
+                    </span>
+                </a>
+
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="../assets/images/logo-sm.png" alt="logo-sm-light" height="40px">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="../assets/images/logo-light.png" alt="logo-light" height="40px">
+                    </span>
+                </a>
+
+                <button type="button" class="btn btn-sm top-icon sidebar-btn" id="sidebar-btn">
+                    <i class="mdi mdi-menu-open align-middle fs-19"></i>
+                </button>
+            </div>
+            <!-- End navbar brand -->
+
+            <!-- Start menu -->
+            <div class="d-flex justify-content-between menu-sm px-3 ms-auto">
+                <div class="d-flex align-items-center gap-2">
+                    <div class="dropdown d-none d-lg-block">
+                        <button type="button" class="btn btn-primary btn-sm fs-14 d-inline" id="light-dark-mode">
+                            <i class="mdi mdi-brightness-7 align-middle"></i>
+                        </button>  
+                    </div>
+
+                    <div class="dropdown d-none d-lg-block">
+                        <button type="button" class="btn btn-primary btn-sm fs-14 d-inline" data-toggle="fullscreen">
+                            <i class="mdi mdi-arrow-expand-all align-middle"></i>
+                        </button>  
+                    </div> 
+                </div>
+
+                <div class="d-flex align-items-center gap-2"> 
+                    <!-- Start Notification --> 
+
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search nid/phone...">
+                            <span class="fab fa-sistrix fs-17 align-middle"></span>
+                        </div>
+                    </form>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn btn-sm top-icon" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bell align-middle"></i>
+                            <span class="btn-marker"><i class="marker marker-dot text-danger"></i><span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-md dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3 bg-info">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="text-white m-0"><i class="far fa-bell me-2"></i> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="badge bg-info-subtle text-info"> 8+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-primary me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-file-document-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">New report has been recived</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-success me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-cart-variant"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">Last order was completed</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hour ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-danger me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-account-group"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">Completed meeting canceled</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 5 hour ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-warning me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-send-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">New feedback received</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 6 hour ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-secondary me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-download-box"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">New update was available</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 day ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-xs avatar-label-info me-3">
+                                            <span class="rounded fs-16">
+                                                <i class="mdi mdi-hexagram-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1">Your password was changed</h6>
+                                            <div class="fs-12 text-muted">
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 2 day ago</p>
+                                            </div>
+                                        </div>
+                                        <i class="mdi mdi-chevron-right align-middle ms-2"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top">
+                                <div class="d-grid">
+                                    <a class="btn btn-sm btn-link font-size-14 text-center" href="notification.html">
+                                        <i class="mdi mdi-arrow-right-circle me-1"></i> View More..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Notification -->
+
+                    <!-- Start Activities -->
+
+                    <!-- <div class="d-inline-block activities">
+                        <button type="button" class="btn btn-sm top-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-rightsidabar">
+                            <i class="fas fa-table align-middle"></i>
+                        </button>
+                    </div> -->
+
+
+                    <!-- End Activities -->
+
+                    <!-- Start Profile -->
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn btn-sm top-icon p-0" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded avatar-2xs p-0" src="../assets/images/users/avatar-6.png" alt="Header Avatar">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-wide dropdown-menu-end dropdown-menu-animated overflow-hidden py-0">
+                            <div class="card border-0">
+                                <div class="card-header bg-primary rounded-0">
+                                    <div class="rich-list-item w-100 p-0">
+                                        <div class="rich-list-prepend">
+                                            <div class="avatar avatar-label-light avatar-circle">
+                                                <div class="avatar-display"><i class="fa fa-user-alt"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-content">
+                                            <h3 class="rich-list-title text-white">Md Enamul Haque</h3>
+                                            <span class="rich-list-subtitle text-white">admin@codubucks.in</span>
+                                        </div>
+                                        <div class="rich-list-append"><span class="badge badge-label-light fs-6">6+</span></div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="grid-nav grid-nav-flush grid-nav-action grid-nav-no-rounded">
+                                        <div class="grid-nav-row">
+                                            <a href="profile.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-address-card"></i></div>
+                                                <span class="grid-nav-content">Profile</span>
+                                            </a>
+
+                                            <a href="wallet.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-comments"></i></div>
+                                                <span class="grid-nav-content">Wallet</span>
+                                            </a>
+                                            <a href="training_schedule.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-clone"></i></div>
+                                                <span class="grid-nav-content">Training</span>
+                                            </a>
+                                        </div>
+                                        <div class="grid-nav-row">
+                                            <a href="today_task.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-calendar-check"></i></div>
+                                                <span class="grid-nav-content">Tasks</span>
+                                            </a>
+                                            <a href="index.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-sticky-note"></i></div>
+                                                <span class="grid-nav-content">Dashboard</span>
+                                            </a>
+                                            <a href="notification.html" class="grid-nav-item">
+                                                <div class="grid-nav-icon"><i class="far fa-bell"></i></div>
+                                                <span class="grid-nav-content">Notification</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer card-footer-bordered rounded-0"><a href="auth-login.html" class="btn btn-label-danger">Sign out</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Profile -->
+                </div>
+            </div>
+            <!-- End menu -->
+        </div>
+    </header>
+    <!-- End topbar -->
+
+    <!-- ========== Left Sidebar Start ========== --> 
+    <div class="sidebar-left"> 
+        <div data-simplebar class="h-100"> 
+            <!--- Sidebar-menu -->
+            <div id="sidebar-menu">
+                <!-- Left Menu Start -->
+                <ul class="left-menu list-unstyled" id="side-menu">
+                
+                    <li>
+                        <a href="index.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li> 
+
+                    <li class="menu-title">Task</li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Meeting</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Meeting Schedule</a></li> 
+                            <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Create Schedule</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Monthly Target</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Target Historyd</a></li> 
+                            <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Create Target</a></li> 
+                        </ul>
+                    </li>
+
+                    <li> 
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Training</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Training Schedule</a></li> 
+                            <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Create Schedule</a></li> 
+                        </ul>
+                    </li>
+
+
+                    <li class="menu-title">Report</li> 
+                    <li>
+                        <a href="salse_marketing_target_achivement.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>S&M Achivement</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-title">Employee</li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Employee</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="join_employee.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Join Employee</a></li> 
+                            <li><a href="employies.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Employies</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="role.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Employee Role</span>
+                        </a>
+                    </li>  
+
+
+
+                    <li class="menu-title">Task</li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Frelancers</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Freelancer List</a></li> 
+                            <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Join Freelancer</a></li> 
+                        </ul>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-handshake"></i>
+                            <span>Customers</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="customer_list.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Customer List</a></li> 
+                            <li><a href="customer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Customer Entry</a></li> 
+                        </ul>
+                    </li>  
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-directions"></i>
+                            <span>Cold Calling</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="cold_callings.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Cold Callings</a></li> 
+                            <li><a href="cold_calling_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Cold-Calling Entry</a></li> 
+                        </ul>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-people-arrows"></i>
+                            <span>Leads</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="leads.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Leads</a></li> 
+                            <li><a href="lead_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Leads</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-google-analytics"></i>
+                            <span>Lead Analysis</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="lead_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Lead Analyses</a></li> 
+                            <li><a href="lead_analysis_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Lead Analysis</a></li> 
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Prospectings</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="prospecting.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Prospectings</a></li> 
+                            <li><a href="prospectings_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Prospectings</a></li> 
+                        </ul>
+                    </li> 
+    
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-teach"></i>
+                            <span>Presentation</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="presentation.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Presentations</a></li> 
+                            <li><a href="presentation_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Presentation</a></li> 
+                        </ul>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-car"></i>
+                            <span>Visit Analysis</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="project_visit.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Visit Analyses</a></li> 
+                            <li><a href="project_visit_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Visit Analysis</a></li> 
+                        </ul>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-human-greeting"></i>
+                            <span>Follow Up</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="follow_ups.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Follow Ups</a></li> 
+                            <li><a href="follow_up_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Follow Up</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-google-analytics"></i>
+                            <span>Follow Up Analysis</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="follow_up_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Follow Up Analyses</a></li> 
+                            <li><a href="follow_up_analyses_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Analyses</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Negotiation</span>
+                        </a> 
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="negotiations.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiations</a></li> 
+                            <li><a href="negotiation_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Negotiations</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-chart-bar"></i>
+                            <span>Negotiation Analysis</span>
+                        </a> 
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="negotiation_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiation Analyses</a></li> 
+                            <li><a href="negotiation_analyses_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Entry Analysis</a></li> 
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class=" fas fa-check-double"></i>
+                            <span>Sales</span>
+                        </a>  
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="sales.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Sales</a></li> 
+                            <li><a href="sales_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Sales</a></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="fas fa-user-times"></i>
+                            <span>Rejection</span>
+                        </a>  
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="rejection.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Rejections</a></li> 
+                            <li><a href="rejection_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Rejection Analysis</a></li> 
+                        </ul>
+                    </li>  
+                    <li class="menu-title">Setting</li>  
+                    <li>
+                        <a href="professions.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Profession</span>
+                        </a>
+                    </li> 
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow ">
+                            <i class="mdi mdi-chart-bar"></i>
+                            <span>Location</span>
+                        </a> 
+                        <ul class="sub-menu" aria-expanded="false">
+                            <!-- <li><a href="division.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Division</a></li> 
+                            <li><a href="district.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> District</a></li> 
+                            <li><a href="upazila.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Upazila/Thana</a></li>  -->
+                            <li><a href="union.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Union</a></li> 
+                            <li><a href="village.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Village</a></li> 
+                            <li><a href="teritory.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Teritory</a></li>
+                            <li><a href="area.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Area</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="trainings.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Training</span>
+                        </a>
+                    </li> 
+
+                    <li>
+                        <a href="position.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Employee Position</span>
+                        </a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="teritory.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Teritory</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="commision.html" class="">
+                            <i class="fas fa-desktop"></i>
+                            <span>Commision</span>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <!-- ========== End Sidebar Start ========== --> 
+
+    <div class="main-content">
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0">Teritory</h4> 
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Teritory List</li>
+                                </ol>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card"> 
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between"> 
+                                    <div class="">
+                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
+                                            <button class="btn btn-primary buttons-copy buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-excel"></i> Excel</span>
+                                            </button>
+
+                                            <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-csv"></i> CSV</span>
+                                            </button>  
+                                        </div>  
+                                    </div>
+
+                                    <div class="">
+                                        <button class="btn btn-secondary mb-2" data-bs-toggle="modal" data-bs-target="#create_modal">
+                                            <span><i class="mdi mdi-clipboard-plus-outline"></i> Add Teritory</span>
+                                        </button> 
+                                    </div>
+                               </div>
+
+                                <table id=" " class="table table-hover table-bordered table-striped dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>Action</th>
+                                            <th>S/N</th> 
+                                            <th>Teritory Name</th>
+                                            <th>Location</th> 
+                                            <th>Status</th>  
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr>
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>  
+                                                    </div>
+                                                </div> 
+                                            </td> 
+                                            <td>1</td>
+                                            <td>Dhaka Zone</td>  
+                                            <td><span class="badge badge-label-primary me-1">Dhaka Division</span><span class="badge badge-label-primary me-1">Dhaka </span><span class="badge badge-label-primary">Tangile</span><span class="badge badge-label-primary">Gazipur</span></td>  
+                                            <th><span class="badge badge-label-success">Active</span></th> 
+                                        </tr>  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div> <!-- container-fluid -->
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Zoom IT.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="http://Zoom IT.in/" target="_blank" class="text-muted">Zoom IT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </div>
+</div>
+<!-- end layout-wrapper -->
+ 
+    <div class="modal fade" id="create_modal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header"> 
+                    <h5 class="modal-title">Create new Teritory</h5><button type="button" class="btn btn-sm btn-label-danger btn-icon" data-bs-dismiss="modal"><i class="mdi mdi-close"></i></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action=""> 
+                        <div class="form-group mb-2">
+                            <label for="teritory">Teritory Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="teritory" name="teritory" placeholder="Enter Teritory" required>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="division">Division <span class="text-danger">*</span></label>
+                            <select id="division" class="select2" multiple name="division" required> 
+                                <option value="">Select Division</option> 
+                                <option value="">Dhaka Division</option> 
+                                <option value="">Rangpur Division</option> 
+                                <option value="">Rajshahi Division</option>
+                                <option value="">Borisal Division</option>  
+                                <option value="">Borisal District</option>  
+                            </select> 
+                        </div> 
+                        <div class="form-group mb-2">
+                            <label for="permission">Status <span class="text-danger">*</span></label>
+                            <select id="permission" class="select2" name="permission" required> 
+                                <option value="" selected>Active</option> 
+                                <option value="">Inactive</option> 
+                            </select> 
+                        </div>
+ 
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="text-end">
+                        <button class="btn btn-primary"><i class="fas fa-save"></i> Submit</button> <button class="btn btn-outline-danger"><i class="mdi mdi-refresh"></i> Reset</button>
+                    </div> 
+                </div>
+
+                <!-- <div class="modal-footer"><button class="btn btn-primary">Submit</button> <button class="btn btn-outline-danger">Reset</button></div> -->
+            </div>
+        </div>
+    </div>
+ 
+
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/jquery/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+
+<script src="../assets/libs/parsleyjs/parsley.min.js"></script>
+
+<script src="../assets/js/pages/form-validation.init.js"></script>
+
+<script src="../assets/libs/select2/js/select2.min.js"></script> 
+<script src="../assets/js/pages/form-select2.init.js"></script>
+
+<script src="../assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from Zoom IT.in/Zoom IT/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Nov 2023 10:06:06 GMT -->
+</html>

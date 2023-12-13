@@ -6,35 +6,34 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Freelancer Join | Way Housing Pvt Ltd</title>
+    <title>Customer List | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
-
-    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
-
     
     <!-- dark layout js -->
     <script src="../assets/js/pages/layout.js"></script>
 
     <!-- Bootstrap Css -->
     <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    
+    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
     <!-- Icons Css -->
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- simplebar css -->
     <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+    
 
 </head>
 
 <body>
 
-<div id="layout-wrapper"> 
+<div id="layout-wrapper">
+
     
 <!-- Start topbar -->
 <header id="page-topbar">
@@ -434,298 +433,173 @@
 
     <div class="main-content">
         <div class="page-content">
-            <div class="container-fluid"> 
+            <div class="container-fluid">
+
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Freelancer Entry</h4>
-
+                            <h4 class="mb-sm-0">Cold-Calling List</h4> 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Freelancer Entry</li>
+                                    <li class="breadcrumb-item active">Cold-Calling List</li>
                                 </ol>
-                            </div>
-
+                            </div> 
                         </div>
                     </div>
                 </div>
                 <!-- end page title -->
 
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-12">
                         <div class="card"> 
                             <div class="card-body">
-                                <form class="needs-validation" novalidate>
-                                    <div class="row">
-                                        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="first_name" class="form-label">First name <span class="text-danger">*</span></label>
-                                                <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First name" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="last_name" class="form-label">Last name</label>
-                                                <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last name" value=""> 
-                                            </div>
+                                <div class="d-flex justify-content-between"> 
+                                    <div class="">
+                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
+                                            <button class="btn btn-primary buttons-copy buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-excel"></i> Excel</span>
+                                            </button>
+
+                                            <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-csv"></i> CSV</span>
+                                            </button> 
                                         </div> 
-                                        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="profile_image" class="form-label">Profile Image</label>
-                                                <input type="file" name="profile_image" id="profile_image" class="form-control">  
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="nid" class="form-label">NID</label>
-                                                <input type="file" name="nid" id="nid" class="form-control" > 
-                                            </div>
-                                        </div>
-
-                                        
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="profession" class="form-label">Profession <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="profession" id="profession" required>
-                                                    <option value="">Select Profession</option>
-                                                    <option value="">Doctors</option>
-                                                    <option value="">Lawyers</option> 
-                                                    <option value="">Banker</option>
-                                                    <option value="">Teacher</option>
-                                                    <option value="">Engineer</option>
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="marital_status" class="form-label">Marital Status <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="marital_status" id="marital_status" required>
-                                                    <option value="">Select Marital Status</option>
-                                                    <option value="">Married</option>
-                                                    <option value="">Unmarried</option>
-                                                    <option value="">Devorce</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="dob" class="form-label">Date of Birth <span class="text-danger">*</span></label>
-                                                <input type="date" name="dob" class="form-control" id="dob" required> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="gender" class="form-label">Gender <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="gender" id="gender" required>
-                                                    <option value="">Select Gender</option>
-                                                    <option value="">Male</option>
-                                                    <option value="">Female</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="email" class="form-label">Email Address</label>
-                                                <input type="email" name="email" class="form-control" id="email" placeholder="Email Number"> 
-                                                <div class="invalid-feedback">
-                                                    This field is invalid.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="division" class="form-label">Division <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="division" id="division" required>
-                                                    <option value="">Select Division</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="district" class="form-label">District <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="district" id="district" required>
-                                                    <option value="">Select District</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="upazila" class="form-label">Thana/Upazila <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="upazila" id="upazila" required>
-                                                    <option value="">Select Thana/Upazila</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="union" class="form-label">Union <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="union" id="union" required>
-                                                    <option value="">Select Union</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="village" class="form-label">Village</label>
-                                                <select class="form-select" name="village" id="village">
-                                                    <option value="">Select Village</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select>  
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="remark" class="form-label">Training Required</label>
-                                                <select class="form-select" name="training_required" id="village">
-                                                    <option value="">Select Training</option>
-                                                    <option value="">Spokent </option> 
-                                                    <option value="">Language </option> 
-                                                    <option value="">SOft Skill </option> 
-                                                    <option value="">Comunication </option> 
-                                                </select>
-                                            </div>
-                                        </div>
- 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Executive Co-Ordinate</label>
-                                                <select id="select2-1" name="freelancer">
-                                                    <option value="">Select Freelancer</option> 
-                                                    <option value="">Md Enamul Haque #FL1545 01796351081</option> 
-                                                    <option value="">Jamil Hosain #FL1545 01796351081</option> 
-                                                    <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
-                                                    <option value="">Suvo Hasan #FL1545 01796351081</option>  
-                                                </select>
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Co-Ordinate</label>
-                                                <select id="select2-2" name="freelancer">
-                                                    <option value="">Select Freelancer</option> 
-                                                    <option value="">Md Enamul Haque #FL1545 01796351081</option> 
-                                                    <option value="">Jamil Hosain #FL1545 01796351081</option> 
-                                                    <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
-                                                    <option value="">Suvo Hasan #FL1545 01796351081</option>  
-                                                </select>
-                                            </div>
-                                        </div>  
-
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <label for="remark" class="form-label">Comment</label>
-                                                <textarea class="form-control" id="remark" rows="2" name="remark"></textarea>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
+                                            <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                                                <span><i class="fas fa-filter"></i> Filter</span>
+                                            </button> 
                                         </div>
                                     </div>
-                                      
-                                    <div>
-                                        <button class="btn btn-primary" type="submit">Submit</button>
-                                    </div>
-                                </form>
+                               </div>
+
+                                <table id=" " class="table table-hover table-bordered table-striped dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>Action</th>
+                                            <th>S/N</th>
+                                            <th>Full Name</th>
+                                            <th>Profession</th>
+                                            <th>Upazilla/Thana</th>
+                                            <th>Union</th>
+                                            <th>Village</th>
+                                            <th>Last Prospecting</th>
+                                            <th>Project</th>
+                                            <th>Unit</th>
+                                            <th>Mobile No</th>
+                                            <th>Freelancer</th>
+                                            <th>Remark</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr>
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="lead_create.html">Lead</a>
+                                                    </div>
+                                                </div> 
+                                            </td> 
+                                            <td>1</td>
+                                            <td>Enamul</td>
+                                            <td>Engineer</td>
+                                            <td>Badulgachhi</td>
+                                            <td>Mothorapur</td>
+                                            <td>Chalkmothor</td>
+                                            <th>11,Dec-2023</th>
+                                            <th>Rana Plaza</th>
+                                            <th>D-3</th>
+                                            <td>01796351081</td>
+                                            <td>Md Jamil [FL154]</td>
+                                            <td>He is Good</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="lead_create.html">Lead</a>
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                            <td>1</td>
+                                            <td>Enamul</td>
+                                            <td>Engineer</td>
+                                            <td>Badulgachhi</td>
+                                            <td>Mothorapur</td>
+                                            <td>Chalkmothor</td>
+                                            <th>11,Dec-2023</th>
+                                            <th>Rana Plaza</th>
+                                            <th>D-3</th>
+                                            <td>01796351081</td>
+                                            <td>Md Jamil [FL154]</td>
+                                            <td>He is Good</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="lead_create.html">Lead</a>
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                            <td>2</td>
+                                            <td>Enamul</td>
+                                            <td>Engineer</td>
+                                            <td>Badulgachhi</td>
+                                            <td>Mothorapur</td>
+                                            <td>Chalkmothor</td>
+                                            <th>11,Dec-2023</th>
+                                            <th>Rana Plaza</th>
+                                            <th>D-3</th>
+                                            <td>01796351081</td>
+                                            <td>Md Jamil [FL154]</td>
+                                            <td>He is Good</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" class="d-block" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v align-middle ms-2 cursor-pointer"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="lead_create.html">Lead</a>
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                            <td>3</td>
+                                            <td>Enamul</td>
+                                            <td>Engineer</td>
+                                            <td>Badulgachhi</td>
+                                            <td>Mothorapur</td>
+                                            <td>Chalkmothor</td>
+                                            <th>11,Dec-2023</th>
+                                            <th>Rana Plaza</th>
+                                            <th>D-3</th>
+                                            <td>01796351081</td>
+                                            <td>Md Jamil [FL154]</td>
+                                            <td>He is Good</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                        </div> 
-                    </div>
-                    <!-- end col -->
- 
+                        </div>
+                    </div> <!-- end col -->
                 </div>
                 <!-- end row -->
             </div> <!-- container-fluid -->
@@ -750,6 +624,7 @@
     <!-- end main content-->
 </div>
 <!-- end layout-wrapper -->
+
  
 
 
@@ -890,13 +765,13 @@
                                 <span>Meeting with</span>
                                 <div class="avatar-group ms-2">
                                     <div class="avatar avatar-circle">
-                                        <img src="../../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                     <div class="avatar avatar-circle">
-                                        <img src="../../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
+                                        <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
                                     </div>
                                 </div>
                             </div>
@@ -936,20 +811,73 @@
     </div> <!-- end card-->
 </div>
 
+<div class="offcanvas offcanvas-end" id="offcanvas">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Select Filter Item</h5>
+        <button class="btn btn-label-danger btn-icon" data-bs-dismiss="offcanvas">
+            <i class="fa fa-times"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="freelancer" class="form-label">Freelancer</label>
+                    <select id="select2-1" name="freelancer" required>
+                        <option value="">Select Freelancer</option> 
+                        <option value="">Enamul #FL1545 01796351081</option> 
+                        <option value="">Jamil Hosain #FL1545 01796351081</option> 
+                        <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
+                        <option value="">Suvo Hasan #FL1545 01796351081</option>  
+                    </select> 
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="customer_name" class="form-label">Customer name <span class="text-danger">*</span></label>
+                    <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Customer name" >
+                </div>
+            </div> 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="profession" class="form-label">Profession <span class="text-danger">*</span></label>
+                    <select class="form-select" name="profession" id="profession">
+                        <option value="">Select Profession</option>
+                        <option value="">Doctors</option>
+                        <option value="">Lawyers</option> 
+                        <option value="">Banker</option>
+                        <option value="">Teacher</option>
+                        <option value="">Engineer</option>
+                    </select>  
+                </div>
+            </div> 
+
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit" data-bs-dismiss="offcanvas">Filter</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <!-- JAVASCRIPT -->
-    <script src="../assets/libs/jquery/jquery.min.js"></script>
-    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/jquery/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
 
-    <script src="../assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="../assets/libs/select2/js/select2.min.js"></script> 
+<script src="../assets/js/pages/form-select2.init.js"></script>
 
-    <script src="../assets/js/pages/form-validation.init.js"></script>
+  
+<script src="../assets/js/app.js"></script>
 
-    <script src="../assets/libs/select2/js/select2.min.js"></script> 
-    <script src="../assets/js/pages/form-select2.init.js"></script>
-
-    <script src="../assets/js/app.js"></script>
 </body>
+
+
+<!-- Mirrored from Zoom IT.in/Zoom IT/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Nov 2023 10:06:06 GMT -->
 </html>

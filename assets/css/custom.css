@@ -252,6 +252,10 @@ a{
     font-weight: 700 !important;
 }
 
+.modal-backdrop + .select2-container{
+    z-index: 9999999 !important;
+}
+
    
  
  

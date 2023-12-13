@@ -6,12 +6,13 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Freelancer Join | Way Housing Pvt Ltd</title>
+    <title>Lead Analysis Entry | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link href="../assets/libs/bootstrap-datetime-picker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
     <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
 
@@ -28,14 +29,17 @@
     <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
+    
+    <link href="../assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+    
+
 
 </head>
 
 <body>
 
-<div id="layout-wrapper"> 
-    
+<div id="layout-wrapper">
+
 <!-- Start topbar -->
 <header id="page-topbar">
     <div class="navbar-header">
@@ -309,74 +313,102 @@
                         <span>Dashboard</span>
                     </a>
                 </li>  
+  
 
-                <li class="menu-title">Basic</li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-network-wired"></i>
-                        <span>Frelancers</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Freelancer List</a></li> 
-                        <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Join Freelancer</a></li> 
-                    </ul>
-                </li> 
+                <li class="menu-title">Task</li> 
 
                 <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-handshake"></i>
-                        <span>Customers</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="customer_list.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Customer List</a></li> 
-                        <li><a href="customer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Customer Entry</a></li> 
-                    </ul>
-                </li> 
-
-                <li class="menu-title">Task</li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-directions"></i>
-                        <span>Cold Calling</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="cold_callings.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Cold Callings</a></li> 
-                        <li><a href="cold_calling_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Cold-Calling Entry</a></li> 
-                    </ul>
-                </li> 
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
+                    <a href="leads.html" class="">
                         <i class="fas fa-people-arrows"></i>
                         <span>Leads</span>
                     </a>
+                </li>  
+  
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-teach"></i>
+                        <span>Presentation</span>
+                    </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="leads.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Leads</a></li> 
-                        <li><a href="lead_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Leads</a></li> 
+                        <li><a href="presentation.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Presentations</a></li> 
+                        <li><a href="presentation_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Presentation</a></li> 
+                    </ul>
+                </li> 
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-car"></i>
+                        <span>Visit Analysis</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="project_visit.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Visit Analyses</a></li> 
+                        <li><a href="project_visit_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Visit Analysis</a></li> 
+                    </ul>
+                </li> 
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-human-greeting"></i>
+                        <span>Follow Up</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="follow_ups.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Follow Ups</a></li> 
+                        <li><a href="follow_up_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Follow Up</a></li> 
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
                         <i class="mdi mdi-google-analytics"></i>
-                        <span>Lead Analysis</span>
+                        <span>Follow Up Analysis</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="lead_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Lead Analyses</a></li> 
-                        <li><a href="lead_analysis_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Lead Analysis</a></li> 
+                        <li><a href="follow_up_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Follow Up Analyses</a></li> 
+                        <li><a href="follow_up_analyses_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Analyses</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Negotiation</span>
+                    </a> 
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="negotiations.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiations</a></li> 
+                        <li><a href="negotiation_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Negotiations</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-chart-bar"></i>
+                        <span>Negotiation Analysis</span>
+                    </a> 
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="negotiation_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiation Analyses</a></li> 
+                        <li><a href="negotiation_analyses_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Entry Analysis</a></li> 
                     </ul>
                 </li>
                 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-project-diagram"></i>
-                        <span>Prospectings</span>
-                    </a>
+                        <i class=" fas fa-check-double"></i>
+                        <span>Sales</span>
+                    </a>  
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="prospecting.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Prospectings</a></li> 
-                        <li><a href="prospectings_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Prospectings</a></li> 
+                        <li><a href="sales.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Sales</a></li> 
+                        <li><a href="sales_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Sales</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="fas fa-user-times"></i>
+                        <span>Rejection</span>
+                    </a>  
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="rejection.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Rejections</a></li> 
+                        <li><a href="rejection_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Rejection Analysis</a></li> 
                     </ul>
                 </li> 
 
@@ -429,7 +461,6 @@
 </div>
 <!-- ========== End Sidebar Start ========== --> 
 
-
     <!-- Start right Content here -->
 
     <div class="main-content">
@@ -439,12 +470,12 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Freelancer Entry</h4>
+                            <h4 class="mb-sm-0">Training Attendance</h4>
 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Freelancer Entry</li>
+                                    <li class="breadcrumb-item active">Training Attendance</li>
                                 </ol>
                             </div>
 
@@ -459,267 +490,73 @@
                             <div class="card-body">
                                 <form class="needs-validation" novalidate>
                                     <div class="row">
-                                        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="first_name" class="form-label">First name <span class="text-danger">*</span></label>
-                                                <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First name" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="last_name" class="form-label">Last name</label>
-                                                <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last name" value=""> 
-                                            </div>
-                                        </div> 
-                                        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="profile_image" class="form-label">Profile Image</label>
-                                                <input type="file" name="profile_image" id="profile_image" class="form-control">  
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="nid" class="form-label">NID</label>
-                                                <input type="file" name="nid" id="nid" class="form-control" > 
-                                            </div>
-                                        </div>
-
-                                        
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="profession" class="form-label">Profession <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="profession" id="profession" required>
-                                                    <option value="">Select Profession</option>
-                                                    <option value="">Doctors</option>
-                                                    <option value="">Lawyers</option> 
-                                                    <option value="">Banker</option>
-                                                    <option value="">Teacher</option>
-                                                    <option value="">Engineer</option>
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="marital_status" class="form-label">Marital Status <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="marital_status" id="marital_status" required>
-                                                    <option value="">Select Marital Status</option>
-                                                    <option value="">Married</option>
-                                                    <option value="">Unmarried</option>
-                                                    <option value="">Devorce</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="dob" class="form-label">Date of Birth <span class="text-danger">*</span></label>
-                                                <input type="date" name="dob" class="form-control" id="dob" required> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="gender" class="form-label">Gender <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="gender" id="gender" required>
-                                                    <option value="">Select Gender</option>
-                                                    <option value="">Male</option>
-                                                    <option value="">Female</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="email" class="form-label">Email Address</label>
-                                                <input type="email" name="email" class="form-control" id="email" placeholder="Email Number"> 
-                                                <div class="invalid-feedback">
-                                                    This field is invalid.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="division" class="form-label">Division <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="division" id="division" required>
-                                                    <option value="">Select Division</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="district" class="form-label">District <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="district" id="district" required>
-                                                    <option value="">Select District</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="upazila" class="form-label">Thana/Upazila <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="upazila" id="upazila" required>
-                                                    <option value="">Select Thana/Upazila</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="union" class="form-label">Union <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="union" id="union" required>
-                                                    <option value="">Select Union</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="village" class="form-label">Village</label>
-                                                <select class="form-select" name="village" id="village">
-                                                    <option value="">Select Village</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select>  
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="remark" class="form-label">Training Required</label>
-                                                <select class="form-select" name="training_required" id="village">
-                                                    <option value="">Select Training</option>
-                                                    <option value="">Spokent </option> 
-                                                    <option value="">Language </option> 
-                                                    <option value="">SOft Skill </option> 
-                                                    <option value="">Comunication </option> 
-                                                </select>
-                                            </div>
-                                        </div>
- 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Executive Co-Ordinate</label>
-                                                <select id="select2-1" name="freelancer">
-                                                    <option value="">Select Freelancer</option> 
-                                                    <option value="">Md Enamul Haque #FL1545 01796351081</option> 
-                                                    <option value="">Jamil Hosain #FL1545 01796351081</option> 
-                                                    <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
-                                                    <option value="">Suvo Hasan #FL1545 01796351081</option>  
-                                                </select>
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Co-Ordinate</label>
-                                                <select id="select2-2" name="freelancer">
-                                                    <option value="">Select Freelancer</option> 
-                                                    <option value="">Md Enamul Haque #FL1545 01796351081</option> 
-                                                    <option value="">Jamil Hosain #FL1545 01796351081</option> 
-                                                    <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
-                                                    <option value="">Suvo Hasan #FL1545 01796351081</option>  
-                                                </select>
-                                            </div>
-                                        </div>  
 
                                         <div class="col-md-12">
                                             <div class="mb-3">
-                                                <label for="remark" class="form-label">Comment</label>
-                                                <textarea class="form-control" id="remark" rows="2" name="remark"></textarea>
+                                                <label for="title" class="form-label">Training Title <span class="text-danger">*</span></label>
+                                                <input type="text" name="title" class="form-control" id="title" placeholder="Training Title" value=""> 
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="agenda" class="form-label">Agenda</label> 
+                                                <textarea class="form-control" id="agenda" rows="3" name="agenda" placeholder="Training Agenda"></textarea>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="freelancer" class="form-label">Trainer <span class="text-danger">*</span></label>
+                                                <select class="select2" tabindex="-1" multiple placeholder="Select Trainer" required>
+                                                    <option value="CT" >Enamul #652</option>
+                                                    <option value="DE" >Jamul #42</option>
+                                                    <option value="FL" >Mehedi #763</option>
+                                                    <option value="GA" >Karim #73</option> 
+                                                </select>
                                                 <div class="invalid-feedback">
                                                     This field is required.
                                                 </div>
                                             </div>
+                                        </div> 
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="start_time" class="form-label">Start Time </label>
+                                                <input type="text" name="start_time" class="datetimepicker form-control" placeholder="Select date">
+                                            </div>
                                         </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="start_time" class="form-label">End Time </label>
+                                                <input type="text" name="start_time" class="datetimepicker form-control" placeholder="Select date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="freelancer" class="form-label">Attendance</label>
+                                                <select class="select2" tabindex="-1" multiple placeholder="Select Attendance" required>
+                                                    <option value="CT" >Enamul #652</option>
+                                                    <option value="DE" >Jamul #42</option>
+                                                    <option value="FL" >Mehedi #763</option>
+                                                    <option value="GA" >Karim #73</option> 
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    This field is required.
+                                                </div>
+                                            </div>
+                                        </div> 
+
+                                        
+                                        
                                     </div>
                                       
-                                    <div>
-                                        <button class="btn btn-primary" type="submit">Submit</button>
-                                    </div>
+                                    <div class="text-end ">
+                                        <button class="btn btn-primary"><i class="fas fa-save"></i> Submit</button> <button class="btn btn-outline-danger"><i class="mdi mdi-refresh"></i> Reset</button>
+                                    </div> 
                                 </form>
                             </div>
                         </div> 
@@ -750,6 +587,7 @@
     <!-- end main content-->
 </div>
 <!-- end layout-wrapper -->
+
  
 
 
@@ -937,19 +775,26 @@
 </div>
 
 <!-- JAVASCRIPT -->
-    <script src="../assets/libs/jquery/jquery.min.js"></script>
-    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/jquery/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
 
-    <script src="../assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="../assets/libs/parsleyjs/parsley.min.js"></script>
 
-    <script src="../assets/js/pages/form-validation.init.js"></script>
+<script src="../assets/js/pages/form-validation.init.js"></script>
 
-    <script src="../assets/libs/select2/js/select2.min.js"></script> 
-    <script src="../assets/js/pages/form-select2.init.js"></script>
+<script src="../assets/libs/select2/js/select2.min.js"></script> 
+<script src="../assets/js/pages/form-select2.init.js"></script>
 
-    <script src="../assets/js/app.js"></script>
+<script src="../assets/libs/bootstrap-datetime-picker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="../assets/js/pages/form-datetimepicker.init.js"></script>
+
+<script src="../assets/js/app.js"></script>
+ 
 </body>
+
+
+<!-- Mirrored from Zoom IT.in/Zoom IT/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Nov 2023 10:06:06 GMT -->
 </html>

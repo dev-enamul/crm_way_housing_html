@@ -6,12 +6,13 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Freelancer Join | Way Housing Pvt Ltd</title>
+    <title>Training History | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link href="../assets/libs/bootstrap-datetime-picker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
     <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
 
@@ -21,6 +22,8 @@
 
     <!-- Bootstrap Css -->
     <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+
+    <link href="../assets/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
     
     <!-- Icons Css -->
     <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -28,14 +31,17 @@
     <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
     <!-- App Css-->
     <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
+    
+    <link href="../assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+    
+
 
 </head>
 
 <body>
 
-<div id="layout-wrapper"> 
-    
+<div id="layout-wrapper">
+
 <!-- Start topbar -->
 <header id="page-topbar">
     <div class="navbar-header">
@@ -309,74 +315,102 @@
                         <span>Dashboard</span>
                     </a>
                 </li>  
+  
 
-                <li class="menu-title">Basic</li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-network-wired"></i>
-                        <span>Frelancers</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="freelancers.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Freelancer List</a></li> 
-                        <li><a href="freelancer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Join Freelancer</a></li> 
-                    </ul>
-                </li> 
+                <li class="menu-title">Task</li> 
 
                 <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-handshake"></i>
-                        <span>Customers</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="customer_list.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Customer List</a></li> 
-                        <li><a href="customer_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Customer Entry</a></li> 
-                    </ul>
-                </li> 
-
-                <li class="menu-title">Task</li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-directions"></i>
-                        <span>Cold Calling</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="cold_callings.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Cold Callings</a></li> 
-                        <li><a href="cold_calling_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Cold-Calling Entry</a></li> 
-                    </ul>
-                </li> 
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow ">
+                    <a href="leads.html" class="">
                         <i class="fas fa-people-arrows"></i>
                         <span>Leads</span>
                     </a>
+                </li>  
+  
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-teach"></i>
+                        <span>Presentation</span>
+                    </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="leads.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Leads</a></li> 
-                        <li><a href="lead_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Leads</a></li> 
+                        <li><a href="presentation.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Presentations</a></li> 
+                        <li><a href="presentation_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Presentation</a></li> 
+                    </ul>
+                </li> 
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-car"></i>
+                        <span>Visit Analysis</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="project_visit.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Visit Analyses</a></li> 
+                        <li><a href="project_visit_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Visit Analysis</a></li> 
+                    </ul>
+                </li> 
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-human-greeting"></i>
+                        <span>Follow Up</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="follow_ups.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Follow Ups</a></li> 
+                        <li><a href="follow_up_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Follow Up</a></li> 
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
                         <i class="mdi mdi-google-analytics"></i>
-                        <span>Lead Analysis</span>
+                        <span>Follow Up Analysis</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="lead_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Lead Analyses</a></li> 
-                        <li><a href="lead_analysis_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Lead Analysis</a></li> 
+                        <li><a href="follow_up_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Follow Up Analyses</a></li> 
+                        <li><a href="follow_up_analyses_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Analyses</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Negotiation</span>
+                    </a> 
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="negotiations.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiations</a></li> 
+                        <li><a href="negotiation_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Negotiations</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="mdi mdi-chart-bar"></i>
+                        <span>Negotiation Analysis</span>
+                    </a> 
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="negotiation_analyses.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Negotiation Analyses</a></li> 
+                        <li><a href="negotiation_analyses_entry.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Entry Analysis</a></li> 
                     </ul>
                 </li>
                 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow ">
-                        <i class="fas fa-project-diagram"></i>
-                        <span>Prospectings</span>
-                    </a>
+                        <i class=" fas fa-check-double"></i>
+                        <span>Sales</span>
+                    </a>  
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="prospecting.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Prospectings</a></li> 
-                        <li><a href="prospectings_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Prospectings</a></li> 
+                        <li><a href="sales.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Sales</a></li> 
+                        <li><a href="sales_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Sales</a></li> 
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow ">
+                        <i class="fas fa-user-times"></i>
+                        <span>Rejection</span>
+                    </a>  
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="rejection.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i> Rejections</a></li> 
+                        <li><a href="rejection_create.html"><i class="mdi mdi-checkbox-blank-circle align-middle"></i>Entry Rejection Analysis</a></li> 
                     </ul>
                 </li> 
 
@@ -429,306 +463,246 @@
 </div>
 <!-- ========== End Sidebar Start ========== --> 
 
-
-    <!-- Start right Content here -->
-
+    <!-- Start right Content here --> 
     <div class="main-content">
         <div class="page-content">
             <div class="container-fluid"> 
-                <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
-                        <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Freelancer Entry</h4>
-
-                            <div class="page-title-right">
-                                <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Freelancer Entry</li>
-                                </ol>
-                            </div>
-
+                        <div class="page-title-box text-center">
+                            <h4 class="mb-sm-0 pb-1">Effective Communication with Homebuyers </h4> 
+                            <p class="m-0">20 December, 2023 <span class="badge badge-label-primary"> 4:20PM - 6:20 PM </span></p>
                         </div>
                     </div>
                 </div>
-                <!-- end page title -->
 
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="card"> 
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header card-header-bordered bg-primary">
+                                <div class="card-icon text-white"><i class="fa fa-user-tag fs14"></i></div>
+                                <h3 class="card-title text-white">Trainer</h3>
+                            </div>
                             <div class="card-body">
-                                <form class="needs-validation" novalidate>
-                                    <div class="row">
-                                        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="first_name" class="form-label">First name <span class="text-danger">*</span></label>
-                                                <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First name" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
+                                <div class="rich-list rich-list-flush">
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs"></div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="last_name" class="form-label">Last name</label>
-                                                <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last name" value=""> 
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Airi Satou</h4>
+                                                <p class="rich-list-subtitle mb-0">Accountant</p>
                                             </div>
-                                        </div> 
-                                        
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="profile_image" class="form-label">Profile Image</label>
-                                                <input type="file" name="profile_image" id="profile_image" class="form-control">  
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="nid" class="form-label">NID</label>
-                                                <input type="file" name="nid" id="nid" class="form-control" > 
-                                            </div>
-                                        </div>
-
-                                        
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="profession" class="form-label">Profession <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="profession" id="profession" required>
-                                                    <option value="">Select Profession</option>
-                                                    <option value="">Doctors</option>
-                                                    <option value="">Lawyers</option> 
-                                                    <option value="">Banker</option>
-                                                    <option value="">Teacher</option>
-                                                    <option value="">Engineer</option>
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="marital_status" class="form-label">Marital Status <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="marital_status" id="marital_status" required>
-                                                    <option value="">Select Marital Status</option>
-                                                    <option value="">Married</option>
-                                                    <option value="">Unmarried</option>
-                                                    <option value="">Devorce</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="dob" class="form-label">Date of Birth <span class="text-danger">*</span></label>
-                                                <input type="date" name="dob" class="form-control" id="dob" required> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="gender" class="form-label">Gender <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="gender" id="gender" required>
-                                                    <option value="">Select Gender</option>
-                                                    <option value="">Male</option>
-                                                    <option value="">Female</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="email" class="form-label">Email Address</label>
-                                                <input type="email" name="email" class="form-control" id="email" placeholder="Email Number"> 
-                                                <div class="invalid-feedback">
-                                                    This field is invalid.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="division" class="form-label">Division <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="division" id="division" required>
-                                                    <option value="">Select Division</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="district" class="form-label">District <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="district" id="district" required>
-                                                    <option value="">Select District</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="upazila" class="form-label">Thana/Upazila <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="upazila" id="upazila" required>
-                                                    <option value="">Select Thana/Upazila</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="union" class="form-label">Union <span class="text-danger">*</span></label>
-                                                <select class="form-select" name="union" id="union" required>
-                                                    <option value="">Select Union</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select> 
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="village" class="form-label">Village</label>
-                                                <select class="form-select" name="village" id="village">
-                                                    <option value="">Select Village</option>
-                                                    <option value="">Dhaka </option>
-                                                    <option value="">Chittagong </option> 
-                                                    <option value="">Rajshahi</option> 
-                                                    <option value="">Khulna </option> 
-                                                    <option value="">Barishal </option> 
-                                                    <option value="">Sylhet</option> 
-                                                    <option value="">Rangpur</option> 
-                                                    <option value="">Mymensingh</option>  
-                                                </select>  
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="remark" class="form-label">Training Required</label>
-                                                <select class="form-select" name="training_required" id="village">
-                                                    <option value="">Select Training</option>
-                                                    <option value="">Spokent </option> 
-                                                    <option value="">Language </option> 
-                                                    <option value="">SOft Skill </option> 
-                                                    <option value="">Comunication </option> 
-                                                </select>
-                                            </div>
-                                        </div>
- 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Executive Co-Ordinate</label>
-                                                <select id="select2-1" name="freelancer">
-                                                    <option value="">Select Freelancer</option> 
-                                                    <option value="">Md Enamul Haque #FL1545 01796351081</option> 
-                                                    <option value="">Jamil Hosain #FL1545 01796351081</option> 
-                                                    <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
-                                                    <option value="">Suvo Hasan #FL1545 01796351081</option>  
-                                                </select>
-                                            </div>
-                                        </div> 
-
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="freelancer" class="form-label">Co-Ordinate</label>
-                                                <select id="select2-2" name="freelancer">
-                                                    <option value="">Select Freelancer</option> 
-                                                    <option value="">Md Enamul Haque #FL1545 01796351081</option> 
-                                                    <option value="">Jamil Hosain #FL1545 01796351081</option> 
-                                                    <option value="">Md Mehedi Hasan #FL1545 01796351081</option> 
-                                                    <option value="">Suvo Hasan #FL1545 01796351081</option>  
-                                                </select>
-                                            </div>
-                                        </div>  
-
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <label for="remark" class="form-label">Comment</label>
-                                                <textarea class="form-control" id="remark" rows="2" name="remark"></textarea>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
                                         </div>
                                     </div>
-                                      
-                                    <div>
-                                        <button class="btn btn-primary" type="submit">Submit</button>
+
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Cedric Kelly</h4>
+                                                <p class="rich-list-subtitle mb-0">Senior Developer</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
                                     </div>
-                                </form>
+                                     
+                                </div>
+                            </div>
+
+                            <div class="card-header card-header-bordered bg-primary">
+                                <div class="card-icon text-white"><i class="fa fa-user-tag fs14"></i></div>
+                                <h3 class="card-title text-white">Attendance</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="rich-list rich-list-flush">
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Airi Satou</h4>
+                                                <p class="rich-list-subtitle mb-0">Accountant</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Cedric Kelly</h4>
+                                                <p class="rich-list-subtitle mb-0">Senior Developer</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Brielle Williamson</h4>
+                                                <p class="rich-list-subtitle mb-0">Integration Specialist</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-4.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Brielle Williamson</h4>
+                                                <p class="rich-list-subtitle mb-0">Integration Specialist</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-column align-items-stretch">
+                                        <div class="rich-list-item">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-xs">
+                                                    <div class=""><img src="../assets/images/users/avatar-6.png" alt="Avatar image" class="avatar-2xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <h4 class="rich-list-title mb-1">Sonya Frost</h4>
+                                                <p class="rich-list-subtitle mb-0">Software Engineer</p>
+                                            </div>
+                                            <div class="rich-list-append"><a href="freelancer_profile.html" class="btn btn-sm btn-label-primary">Profile</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-primary">
+                                <div class="card-icon text-white"><i class="mdi mdi-view-agenda fs14"></i></div>
+                                <h3 class="card-title text-white"> Agenda</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5>Welcome and Introduction (15 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-primary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Greet participants and set a positive tone for the session.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Introduce the importance of effective communication in the housing industry.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+        
+                                <h5>Icebreaker Activity: "Two Truths and a Lie" (20 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-primary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Encourage team members to share interesting facts about themselves.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Foster a relaxed atmosphere for open communication.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+        
+                                <h5>Understanding Communication Styles (30 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-primary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Presentation on different communication styles.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Group discussion on recognizing and adapting to various communication preferences</p>
+                                        </div>
+                                    </div> 
+                                </div>
+        
+                                <h5>Active Listening Techniques (20 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-primary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Importance of active listening in effective communication.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Interactive exercises to practice active listening skills.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                                <h5>Break (10 minutes)</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-pin">
+                                            <i class="marker marker-dot text-secondary"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <p class="mb-0">Break (10 minutes)</p>
+                                        </div>
+                                    </div> 
+                                </div> 
                             </div>
                         </div> 
                     </div>
-                    <!-- end col -->
- 
-                </div>
-                <!-- end row -->
-            </div> <!-- container-fluid -->
+                </div> 
+            </div>  
         </div>
 
         <footer class="footer">
@@ -750,6 +724,7 @@
     <!-- end main content-->
 </div>
 <!-- end layout-wrapper -->
+
  
 
 
@@ -937,19 +912,26 @@
 </div>
 
 <!-- JAVASCRIPT -->
-    <script src="../assets/libs/jquery/jquery.min.js"></script>
-    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/jquery/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
 
-    <script src="../assets/libs/parsleyjs/parsley.min.js"></script>
+<script src="../assets/libs/parsleyjs/parsley.min.js"></script>
 
-    <script src="../assets/js/pages/form-validation.init.js"></script>
+<script src="../assets/libs/moment/min/moment.min.js"></script>
+<script src="../assets/libs/daterangepicker/daterangepicker.js"></script>  
+<script src="../assets/js/pages/form-rangepicker.init.js"></script>
 
-    <script src="../assets/libs/select2/js/select2.min.js"></script> 
-    <script src="../assets/js/pages/form-select2.init.js"></script>
+<script>
+    getDateRange('filter_input',true);
+</script>
 
-    <script src="../assets/js/app.js"></script>
+<script src="../assets/js/app.js"></script>
+ 
 </body>
+
+
+<!-- Mirrored from Zoom IT.in/Zoom IT/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Nov 2023 10:06:06 GMT -->
 </html>
