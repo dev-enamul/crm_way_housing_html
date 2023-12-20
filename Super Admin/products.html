@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Salse | Way Housing Pvt Ltd</title>
+    <title>Product | Way Housing Pvt Ltd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Zoom IT" name="author" />
@@ -30,13 +30,13 @@
 
     <link rel="stylesheet" href="../assets/css/custom.css">
 
+
 </head>
 
 <body>
 
 <div id="layout-wrapper">
-
-    
+ 
 <!-- Start topbar -->
 <header id="page-topbar">
     <div class="navbar-header">
@@ -90,7 +90,7 @@
 
                 <form class="app-search d-none d-lg-block">
                     <div class="position-relative">
-                        <input type="text" class="form-control" placeholder="Search nid/phone...">
+                        <input type="text" class="form-control select2" placeholder="Search nid/phone...">
                         <span class="fab fa-sistrix fs-17 align-middle"></span>
                     </div>
                 </form>
@@ -590,190 +590,183 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Salse Details</h4> 
+                            <h4 class="mb-sm-0">Product List</h4> 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">Salse Details</li>
+                                    <li class="breadcrumb-item active">Product List</li>
                                 </ol>
-                            </div> 
+                            </div>
+
                         </div>
                     </div>
                 </div>
                 <!-- end page title -->
 
+             
+
                 <div class="row">
                     <div class="col-12">
                         <div class="card"> 
-                            <div class="card-header text-center flex-column pb-0">
-                                <img src="../assets//images/logo-dark.png" alt="" class="page_header_logo">
-                                <h3 class="mb-0">Way Housing Pvt. Ltd</h3>
-                                <p class="m-0">Project Note Sheet</p> 
-                                <p class="m-0 fs-16 mt-1"><strong>Customer Details</strong></p>
-                            </div>
-                            <div class="card-body"> 
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-2"><label class="bold-lg"> Customer Name : </label> Md Enamul Haque</td> 
+                            <div class="card-body">
+                               <div class="d-flex justify-content-between"> 
+                                    <div class="">
+                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
+                                            <button class="btn btn-primary buttons-copy buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-excel"></i> Excel</span>
+                                            </button>
+
+                                            <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
+                                                <span><i class="fas fa-file-csv"></i> CSV</span>
+                                            </button> 
+                                        </div> 
+                                    </div>
+                                    <div class="">
+                                        <div class="dt-buttons btn-group flex-wrap mb-2">      
+                                            <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                                                <span><i class="fas fa-filter"></i> Filter</span>
+                                            </button> 
+                                        </div>
+                                    </div>
+                               </div>
+                               
+                                <table id=" " class="table table-hover table-bordered table-striped dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <thead>
+                                        <tr class="">
+                                            <th>Action</th>
+                                            <th>S/N</th> 
+                                            <th>Name & ID</th>
+                                            <th>Address</th>
+                                            <th>Flat</th>
+                                            <th>Shop</th>
+                                            <th>Garage</th> 
+                                            <th>Deiuxe/Studio</th> 
+                                            <th>Sea/Hall</th> 
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                       <tr class="">
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <img class="rounded avatar-2xs p-0" src="../assets/images/users/avatar-6.png" alt="Header Avatar">
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <!-- <a class="dropdown-item" href="freelancer_profile.html">View Profile</a> -->
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <!-- <a class="dropdown-item" href="profession_permission.html">Update Permission</a> -->
+                                                    </div>
+                                                </div> 
+                                            </td> 
+                                            <td>1</td>
+                                            <td>MN Tower</td>
+                                            <td>Mohammadpur, Dhaka</td>
+                                            <td>3/12</td>
+                                            <td>4/12</td>
+                                            <td>6/12</td>
+                                            <td>4/65</td> 
+                                            <td>5/12</td>
                                         </tr> 
- 
-                                    </tbody>
-                                </table>
 
-                                <table class="table  table-bordered dt-responsive nowrap fs-14" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-2"><label class="bold-lg"> Customer Mobile : </label> 01796351081</td> 
-                                            <td class="p-2"><label class="bold-lg"> Booking Date : </label> 12 December, 2023</td> 
-                                            <td class="p-2"><label class="bold-lg"> Customer ID : </label> #56746</td> 
+                                        <tr class="">
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <img class="rounded avatar-2xs p-0" src="../assets/images/users/avatar-6.png" alt="Header Avatar">
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <!-- <a class="dropdown-item" href="freelancer_profile.html">View Profile</a> -->
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <!-- <a class="dropdown-item" href="profession_permission.html">Update Permission</a> -->
+                                                    </div>
+                                                </div> 
+                                            </td> 
+                                            <td>1</td>
+                                            <td>MN Tower</td>
+                                            <td>Mohammadpur, Dhaka</td>
+                                            <td>3/12</td>
+                                            <td>4/12</td>
+                                            <td>6/12</td>
+                                            <td>4/65</td> 
+                                            <td>5/12</td>
                                         </tr> 
- 
-                                    </tbody>
-                                </table>  
-                                <p class="m-0 fs-16 mt-1 text-center"><strong>Salse & Marketing Team Details</strong></p>
 
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1" style="width: 70%;"><label class="bold-lg"> Regional Manager : </label> Md Enamul Haque</td> 
-                                            <td class="p-1"><label class="bold-lg"> EMP ID : </label> #67510</td>  
-                                        </tr>  
-                                    </tbody>
-                                </table>
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1" style="width: 70%;"><label class="bold-lg"> Zonal Manager : </label> Md Enamul Haque</td> 
-                                            <td class="p-1"><label class="bold-lg"> EMP ID : </label> #67510</td>  
-                                        </tr>  
-                                    </tbody>
-                                </table>
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1" style="width: 70%;"><label class="bold-lg"> Area In Charge : </label> Md Enamul Haque</td> 
-                                            <td class="p-1"><label class="bold-lg"> EMP ID : </label> #67510</td>  
-                                        </tr>  
-                                    </tbody>
-                                </table>
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1" style="width: 70%;"><label class="bold-lg"> ASM/ DSM Salse : </label> Md Enamul Haque</td> 
-                                            <td class="p-1"><label class="bold-lg"> EMP ID : </label> #67510</td>  
-                                        </tr>  
-                                    </tbody>
-                                </table>
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1" style="width: 70%;"><label class="bold-lg"> Officer/ Executive/ Sr. Executive- Marketing : </label> Md Enamul Haque</td> 
-                                            <td class="p-1"><label class="bold-lg"> EMP ID : </label> #67510</td>  
-                                        </tr>  
-                                    </tbody>
-                                </table>
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1" style="width: 70%;"><label class="bold-lg"> Ex. Co-Ordinator : </label> Md Enamul Haque</td> 
-                                            <td class="p-1"><label class="bold-lg"> FL ID : </label> #67510</td>  
-                                        </tr>  
-                                    </tbody>
-                                </table>
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1" style="width: 70%;"><label class="bold-lg"> Co-Ordinator : </label> Md Enamul Haque</td> 
-                                            <td class="p-1"><label class="bold-lg"> FL ID : </label> #67510</td>  
-                                        </tr>  
-                                    </tbody>
-                                </table>
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1" style="width: 70%;"><label class="bold-lg"> Real State Agent : </label> Md Enamul Haque</td> 
-                                            <td class="p-1"><label class="bold-lg"> FL ID : </label> #67510</td>  
-                                        </tr>  
-                                    </tbody>
-                                </table>
-
-                                <p class="m-0 fs-16 mt-1 text-center"><strong>Project & Unit Details</strong></p> 
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1" style="width:50%;"><label class="bold-lg"> Project Name : </label> MN Tower</td> 
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Unit Choice : </label> Flat
-                                            </td>  
-                                        </tr>  
-                                    </tbody>
-                                </table>
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Unit Value : </label> $76766</td> 
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Unit Qty : </label> 5
-                                            </td>  
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Unit Facility : </label> With Finishing
+                                        <tr class="">
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <img class="rounded avatar-2xs p-0" src="../assets/images/users/avatar-6.png" alt="Header Avatar">
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <!-- <a class="dropdown-item" href="freelancer_profile.html">View Profile</a> -->
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <!-- <a class="dropdown-item" href="profession_permission.html">Update Permission</a> -->
+                                                    </div>
+                                                </div> 
                                             </td> 
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Floor No : </label> 5
-                                            </td> 
+                                            <td>1</td>
+                                            <td>MN Tower</td>
+                                            <td>Mohammadpur, Dhaka</td>
+                                            <td>3/12</td>
+                                            <td>4/12</td>
+                                            <td>6/12</td>
+                                            <td>4/65</td> 
+                                            <td>5/12</td>
+                                        </tr> 
 
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Unit No : </label> 5
+                                        <tr class="">
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <img class="rounded avatar-2xs p-0" src="../assets/images/users/avatar-6.png" alt="Header Avatar">
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <!-- <a class="dropdown-item" href="freelancer_profile.html">View Profile</a> -->
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <!-- <a class="dropdown-item" href="profession_permission.html">Update Permission</a> -->
+                                                    </div>
+                                                </div> 
                                             </td> 
-                                        </tr>  
+                                            <td>1</td>
+                                            <td>MN Tower</td>
+                                            <td>Mohammadpur, Dhaka</td>
+                                            <td>3/12</td>
+                                            <td>4/12</td>
+                                            <td>6/12</td>
+                                            <td>4/65</td> 
+                                            <td>5/12</td>
+                                        </tr> 
+
+                                        <tr class="">
+                                            <td class="text-center" data-bs-toggle="tooltip" title="Action"> 
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <img class="rounded avatar-2xs p-0" src="../assets/images/users/avatar-6.png" alt="Header Avatar">
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-animated">
+                                                        <!-- <a class="dropdown-item" href="freelancer_profile.html">View Profile</a> -->
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <!-- <a class="dropdown-item" href="profession_permission.html">Update Permission</a> -->
+                                                    </div>
+                                                </div> 
+                                            </td> 
+                                            <td>1</td>
+                                            <td>MN Tower</td>
+                                            <td>Mohammadpur, Dhaka</td>
+                                            <td>3/12</td>
+                                            <td>4/12</td>
+                                            <td>6/12</td>
+                                            <td>4/65</td> 
+                                            <td>5/12</td>
+                                        </tr> 
+                                         
                                     </tbody>
                                 </table>
-
-                                <table class="table  table-bordered dt-responsive nowrap fs-14 mb-2" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                    <tbody>  
-                                        <tr>
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Booking Money : </label> $76766</td> 
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Duration : </label> 5 December, 2023
-                                            </td>  
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Type : </label> A
-                                            </td> 
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Floor No : </label> 5
-                                            </td> 
-
-                                            <td class="p-1">
-                                                <label class="bold-lg"> Choice Type : </label> Lottery
-                                            </td> 
-                                        </tr>  
-                                    </tbody>
-                                </table>
-                                
-
-                            </div>
-                            <div class="card-footer">
-                                <div class="dt-buttons btn-group flex-wrap mb-2">      
-                                    <button class="btn btn-primary buttons-copy buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
-                                        <span><i class="mdi mdi-printer"></i> Print</span>
-                                    </button>
-
-                                    <!-- <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="datatable-buttons" type="button">
-                                        <span><i class="fas fa-file-pdf"></i> PDF</span>
-                                    </button>  -->
-                                </div> 
                             </div>
                         </div>
                     </div> <!-- end col -->
@@ -801,7 +794,301 @@
     <!-- end main content-->
 </div>
 <!-- end layout-wrapper -->
+
  
+
+<!-- Rightbar Sidebar -->
+<div class="offcanvas offcanvas-end" id="offcanvas-rightsidabar">
+    <div class="card h-100 rounded-0" data-simplebar="init">
+        <div class="card-header bg-light">
+            <h6 class="card-title text-uppercase">Activities</h6>
+            <div class="card-addon">
+                <button class="btn btn-label-danger" data-bs-dismiss="offcanvas">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="">
+                <h3 class="card-title">Company summary</h3>
+                <div class="border rounded p-2">
+                    <p class="text-muted mb-2">Server Load</p>
+                    <h4 class="fs-16 mb-2">489</h4>
+                    <div class="progress progress-sm" style="height:4px;">
+                        <div class="progress-bar bg-success" style="width: 49.4%"></div>
+                    </div>
+                    <p class="text-muted mb-0 mt-1">49.4% <span>Avg</span></p>
+                </div>
+                <div class="border rounded p-2">
+                    <p class="text-muted mb-2">Members online</p>
+                    <h4 class="fs-16 mb-2">3,450</h4>
+                    <div class="progress progress-sm" style="height:4px;">
+                        <div class="progress-bar bg-danger" style="width: 34.6%"></div>
+                    </div>
+                    <p class="text-muted mb-0 mt-1">34.6% <span>Avg</span></p>
+                </div>
+                <div class="border rounded p-2">
+                    <p class="text-muted mb-2">Today's revenue</p>
+                    <h4 class="fs-16 mb-2">$18,390</h4>
+                    <div class="progress progress-sm" style="height:4px;">
+                        <div class="progress-bar bg-warning" style="width: 20%"></div>
+                    </div>
+                    <p class="text-muted mb-0 mt-1">$37,578 <span>Avg</span></p>
+                </div>
+                <div class="border rounded p-2">
+                    <p class="text-muted mb-2">Expected profit</p>
+                    <h4 class="fs-16 mb-2">$23,461</h4>
+                    <div class="progress progress-sm" style="height:4px;">
+                        <div class="progress-bar bg-info" style="width: 60%"></div>
+                    </div>
+                    <p class="text-muted mb-0 mt-1">$23,461 <span>Avg</span></p>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="card-title">Latest log</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-pin"><i class="marker marker-dot text-primary"></i></div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">12 new users registered</p>
+                                <span class="text-muted">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-pin"><i class="marker marker-dot text-success"></i></div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">System shutdown <span class="badge badge-label-success">pending</span></p>
+                                <span class="text-muted">2 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-pin"><i class="marker marker-dot text-primary"></i></div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">New invoice received</p>
+                                <span class="text-muted">3 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-pin"><i class="marker marker-dot text-danger"></i></div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">New order received <span class="badge badge-label-danger">urgent</span></p>
+                                <span class="text-muted">10 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-pin"><i class="marker marker-dot text-warning"></i></div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">Production server down</p>
+                                <span class="text-muted">1 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-pin"><i class="marker marker-dot text-info"></i></div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">System error <a href="#">check</a></p>
+                                <span class="text-muted">2 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-pin"><i class="marker marker-dot text-secondary"></i></div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">DB overloaded 80%</p>
+                                <span class="text-muted">5 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-pin"><i class="marker marker-dot text-success"></i></div>
+                        <div class="timeline-content">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">Production server up</p>
+                                <span class="text-muted">6 hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="card-title">Upcoming activities</h3>
+                <div class="timeline timeline-timed">
+                    <div class="timeline-item">
+                        <span class="timeline-time">10:00</span>
+                        <div class="timeline-pin"><i class="marker marker-circle text-primary"></i></div>
+                        <div class="timeline-content">
+                            <div>
+                                <span>Meeting with</span>
+                                <div class="avatar-group ms-2">
+                                    <div class="avatar avatar-circle">
+                                        <img src="../assets/images/users/avatar-1.png" alt="Avatar image" class="avatar-2xs" />
+                                    </div>
+                                    <div class="avatar avatar-circle">
+                                        <img src="../assets/images/users/avatar-2.png" alt="Avatar image" class="avatar-2xs" />
+                                    </div>
+                                    <div class="avatar avatar-circle">
+                                        <img src="../assets/images/users/avatar-3.png" alt="Avatar image" class="avatar-2xs" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">12:45</span>
+                        <div class="timeline-pin"><i class="marker marker-circle text-warning"></i></div>
+                        <div class="timeline-content">
+                            <p class="mb-0">Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna elit enim at minim veniam quis nostrud</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">14:00</span>
+                        <div class="timeline-pin"><i class="marker marker-circle text-danger"></i></div>
+                        <div class="timeline-content">
+                            <p class="mb-0">Received a new feedback on <a href="#">GoFinance</a> App product.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">15:20</span>
+                        <div class="timeline-pin"><i class="marker marker-circle text-success"></i></div>
+                        <div class="timeline-content">
+                            <p class="mb-0">Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">17:00</span>
+                        <div class="timeline-pin"><i class="marker marker-circle text-info"></i></div>
+                        <div class="timeline-content">
+                            <p class="mb-0">Make Deposit <a href="#">USD 700</a> o ESL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end card-->
+</div> 
+
+<div class="offcanvas offcanvas-end" id="offcanvas">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Select Filter Item</h5>
+        <button class="btn btn-label-danger btn-icon" data-bs-dismiss="offcanvas">
+            <i class="fa fa-times"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="row">  
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="customer_name" class="form-label">Freelancer name </label>
+                    <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Freelancer name" >
+                </div>
+            </div> 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="customer_name" class="form-label">Freelancer ID </label>
+                    <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Freelancer name" >
+                </div>
+            </div> 
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="upazila" class="form-label">Thana/Upazila </label>
+                    <select class="form-select" name="upazila" id="upazila" required>
+                        <option value="">Select Thana/Upazila</option>
+                        <option value="">Dhaka </option>
+                        <option value="">Chittagong </option> 
+                        <option value="">Rajshahi</option> 
+                        <option value="">Khulna </option> 
+                        <option value="">Barishal </option> 
+                        <option value="">Sylhet</option> 
+                        <option value="">Rangpur</option> 
+                        <option value="">Mymensingh</option>  
+                    </select> 
+                    <div class="invalid-feedback">
+                        This field is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="union" class="form-label">Union </label>
+                    <select class="form-select" name="union" id="union" required>
+                        <option value="">Select Union</option>
+                        <option value="">Dhaka </option>
+                        <option value="">Chittagong </option> 
+                        <option value="">Rajshahi</option> 
+                        <option value="">Khulna </option> 
+                        <option value="">Barishal </option> 
+                        <option value="">Sylhet</option> 
+                        <option value="">Rangpur</option> 
+                        <option value="">Mymensingh</option>  
+                    </select> 
+                    <div class="invalid-feedback">
+                        This field is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="village" class="form-label">Village</label>
+                    <select class="form-select" name="village" id="village">
+                        <option value="">Select Village</option>
+                        <option value="">Dhaka </option>
+                        <option value="">Chittagong </option> 
+                        <option value="">Rajshahi</option> 
+                        <option value="">Khulna </option> 
+                        <option value="">Barishal </option> 
+                        <option value="">Sylhet</option> 
+                        <option value="">Rangpur</option> 
+                        <option value="">Mymensingh</option>  
+                    </select>  
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="profession" class="form-label">Profession </label>
+                    <select class="form-select" name="profession" id="profession">
+                        <option value="">Select Profession</option>
+                        <option value="">Doctors</option>
+                        <option value="">Lawyers</option> 
+                        <option value="">Banker</option>
+                        <option value="">Teacher</option>
+                        <option value="">Engineer</option>
+                    </select>  
+                </div>
+            </div> 
+
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="profession" class="form-label">Join Date </label>
+                    <input class="form-control" type="text" id="daterangepicker-4" />   
+                </div>
+            </div> 
+
+            <div class="text-end ">
+                <button class="btn btn-primary"><i class="fas fa-filter"></i> Filter</button> <button class="btn btn-outline-danger"><i class="mdi mdi-refresh"></i> Reset</button>
+            </div> 
+
+        </div>
+    </div>
+</div>
+
 
 <!-- JAVASCRIPT -->
 <script src="../assets/libs/jquery/jquery.min.js"></script>
@@ -813,17 +1100,11 @@
 <script src="../assets/libs/select2/js/select2.min.js"></script> 
 <script src="../assets/js/pages/form-select2.init.js"></script>
 
-<script src="../assets/libs/moment/min/moment.min.js"></script>
-<script src="../assets/libs/daterangepicker/daterangepicker.js"></script>  
-<script src="../assets/js/pages/form-rangepicker.init.js"></script>
 
-<script>
-    getDateRange('join_date');
-    getDateRange('last_cold_calling');
-    getDateRange('possible_purchase_date');
-    getDateRange('last_lead_date');
-    getDateRange('presentation_date')
-</script>
+<script src="../assets/libs/moment/min/moment.min.js"></script>
+<script src="../assets/libs/daterangepicker/daterangepicker.js"></script> 
+
+<script src="../assets/js/pages/form-rangepicker.init.js"></script>
 
   
 <script src="../assets/js/app.js"></script>
